@@ -5,7 +5,7 @@
   --brainwaveio-blue: #473BF0;
   --brainwaveio-indigo: #727cf5;
   --brainwaveio-purple: #6b5eae;
-  --brainwaveio-pink: #F74D4D;
+  --brainwaveio-pink: #4A79BA;
   --brainwaveio-red: #f71C1C;
   --brainwaveio-orange: #E3A476;
   --brainwaveio-yellow: #FFDA91;
@@ -27,7 +27,7 @@
   --brainwaveio-gray-900: #535353;
   --brainwaveio-gray-1000: #2E2F33;
   --brainwaveio-gray-1100: #161C2D;
-  --brainwaveio-primary: #F74D4D;
+  --brainwaveio-primary: #4A79BA;
   --brainwaveio-secondary: #2E2F33;
   --brainwaveio-success: #68D585;
   --brainwaveio-info: #473BF0;
@@ -94,10 +94,10 @@
   --brainwaveio-link-color: #161C2D;
   --brainwaveio-link-color-rgb: 22, 28, 45;
   --brainwaveio-link-decoration: none;
-  --brainwaveio-link-hover-color: #F74D4D;
+  --brainwaveio-link-hover-color: #4A79BA;
   --brainwaveio-link-hover-color-rgb: 247, 77, 77;
   --brainwaveio-link-hover-decoration: underline;
-  --brainwaveio-code-color: #F74D4D;
+  --brainwaveio-code-color: #4A79BA;
   --brainwaveio-highlight-bg: #fff8e9;
   --brainwaveio-border-width: 1px;
   --brainwaveio-border-style: solid;
@@ -239,9 +239,9 @@
   --brainwaveio-btn-brainwaveio-default-active-border: #404a57;
   --brainwaveio-btn-active-border-color: transparent;
   --brainwaveio-btn-brainwaveio-primary-color: var(--brainwaveio-primary);
-  --brainwaveio-btn-brainwaveio-primary-hover-color: #cd4040;
+  --brainwaveio-btn-brainwaveio-primary-hover-color: #335482;
   --brainwaveio-btn-brainwaveio-primary-active-background: #fddbdb;
-  --brainwaveio-btn-brainwaveio-primary-active-color: #cd4040;
+  --brainwaveio-btn-brainwaveio-primary-active-color: #335482;
   --brainwaveio-btn-brainwaveio-secondary-color: var(--brainwaveio-secondary);
   --brainwaveio-btn-brainwaveio-secondary-hover-color: #26272a;
   --brainwaveio-btn-brainwaveio-secondary-active-background: #d5d5d6;
@@ -272,7 +272,7 @@
   --brainwaveio-btn-brainwaveio-dark-active-color: #26272a;
   --brainwaveio-input-btn-focus-color: rgba(247, 77, 77, 0.25);
   --brainwaveio-btn-link-color: var(--brainwaveio-link-color);
-  --brainwaveio-btn-link-hover-color: #F74D4D;
+  --brainwaveio-btn-link-hover-color: #4A79BA;
   --brainwaveio-btn-disabled-color: #748194;
   --brainwaveio-input-focus-border-color-global: #fba6a6;
   --brainwaveio-input-placeholder-color-global: var(--brainwaveio-gray-400);
@@ -280,7 +280,7 @@
   --brainwaveio-navbar-vertical-default-bg-color: var(--brainwaveio-bg-navbar-glass);
   --brainwaveio-navbar-vertical-default-link-color: #5e6e82;
   --brainwaveio-navbar-vertical-default-link-hover-color: #2E2F33;
-  --brainwaveio-navbar-vertical-default-link-active-color: #F74D4D;
+  --brainwaveio-navbar-vertical-default-link-active-color: #4A79BA;
   --brainwaveio-navbar-vertical-default-link-disable-color: #E3E6ED;
   --brainwaveio-navbar-vertical-default-hr-color: rgba(0, 0, 0, 0.08);
   --brainwaveio-navbar-vertical-default-scrollbar-color: rgba(116, 129, 148, 0.3);
@@ -375,7 +375,7 @@
   --brainwaveio-toast-header-bg-global: rgba(255, 255, 255, 0.85);
   --brainwaveio-list-group-bg-global: var(--brainwaveio-emphasis-bg);
   --brainwaveio-accordion-btn-color-global: #5e6e82;
-  --brainwaveio-alert-link-color: #F74D4D;
+  --brainwaveio-alert-link-color: #4A79BA;
 }
 :root [class^=btn-brainwaveio-].show,
 [data-bs-theme=light] [class^=btn-brainwaveio-].show {
@@ -3136,8 +3136,8 @@ textarea.form-control-lg {
   box-shadow: 0 0 0 0.25rem rgba(247, 77, 77, 0.25);
 }
 .form-check-input:checked {
-  background-color: #F74D4D;
-  border-color: #F74D4D;
+  background-color: #4A79BA;
+  border-color: #4A79BA;
 }
 .form-check-input:checked[type=checkbox] {
   --brainwaveio-form-check-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
@@ -3146,8 +3146,8 @@ textarea.form-control-lg {
   --brainwaveio-form-check-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
 }
 .form-check-input[type=checkbox]:indeterminate {
-  background-color: #F74D4D;
-  border-color: #F74D4D;
+  background-color: #4A79BA;
+  border-color: #4A79BA;
   --brainwaveio-form-check-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e");
 }
 .form-check-input:disabled {
@@ -3247,7 +3247,7 @@ textarea.form-control-lg {
   margin-top: -0.25rem;
   -webkit-appearance: none;
   appearance: none;
-  background-color: #F74D4D;
+  background-color: #4A79BA;
   border: 0;
   border-radius: 1rem;
   -webkit-box-shadow: 0 0.1rem 0.25rem rgba(0, 0, 0, 0.1);
@@ -3282,7 +3282,7 @@ textarea.form-control-lg {
   height: 1rem;
   -moz-appearance: none;
   appearance: none;
-  background-color: #F74D4D;
+  background-color: #4A79BA;
   border: 0;
   border-radius: 1rem;
   box-shadow: 0 0.1rem 0.25rem rgba(0, 0, 0, 0.1);
@@ -3850,10 +3850,10 @@ textarea.form-control-lg {
 
 .btn-primary {
   --brainwaveio-btn-color: #fff;
-  --brainwaveio-btn-bg: #F74D4D;
-  --brainwaveio-btn-border-color: #F74D4D;
+  --brainwaveio-btn-bg: #4A79BA;
+  --brainwaveio-btn-border-color: #4A79BA;
   --brainwaveio-btn-hover-color: #fff;
-  --brainwaveio-btn-hover-bg: #d24141;
+  --brainwaveio-btn-hover-bg: #335482;
   --brainwaveio-btn-hover-border-color: #c63e3e;
   --brainwaveio-btn-focus-shadow-rgb: 248, 104, 104;
   --brainwaveio-btn-active-color: #fff;
@@ -3861,8 +3861,8 @@ textarea.form-control-lg {
   --brainwaveio-btn-active-border-color: #b93a3a;
   --brainwaveio-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --brainwaveio-btn-disabled-color: #fff;
-  --brainwaveio-btn-disabled-bg: #F74D4D;
-  --brainwaveio-btn-disabled-border-color: #F74D4D;
+  --brainwaveio-btn-disabled-bg: #4A79BA;
+  --brainwaveio-btn-disabled-border-color: #4A79BA;
 }
 
 .btn-secondary {
@@ -3985,19 +3985,19 @@ textarea.form-control-lg {
 }
 
 .btn-outline-primary {
-  --brainwaveio-btn-color: #F74D4D;
-  --brainwaveio-btn-border-color: #F74D4D;
+  --brainwaveio-btn-color: #4A79BA;
+  --brainwaveio-btn-border-color: #4A79BA;
   --brainwaveio-btn-hover-color: #fff;
-  --brainwaveio-btn-hover-bg: #F74D4D;
-  --brainwaveio-btn-hover-border-color: #F74D4D;
+  --brainwaveio-btn-hover-bg: #4A79BA;
+  --brainwaveio-btn-hover-border-color: #4A79BA;
   --brainwaveio-btn-focus-shadow-rgb: 247, 77, 77;
   --brainwaveio-btn-active-color: #fff;
-  --brainwaveio-btn-active-bg: #F74D4D;
-  --brainwaveio-btn-active-border-color: #F74D4D;
+  --brainwaveio-btn-active-bg: #4A79BA;
+  --brainwaveio-btn-active-border-color: #4A79BA;
   --brainwaveio-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --brainwaveio-btn-disabled-color: #F74D4D;
+  --brainwaveio-btn-disabled-color: #4A79BA;
   --brainwaveio-btn-disabled-bg: transparent;
-  --brainwaveio-btn-disabled-border-color: #F74D4D;
+  --brainwaveio-btn-disabled-border-color: #4A79BA;
   --brainwaveio-gradient: none;
 }
 
@@ -4254,7 +4254,7 @@ textarea.form-control-lg {
   --brainwaveio-dropdown-link-hover-color: var(--brainwaveio-dropdown-link-hover-color-global);
   --brainwaveio-dropdown-link-hover-bg: var(--brainwaveio-dropdown-link-hover-bg-global);
   --brainwaveio-dropdown-link-active-color: #fff;
-  --brainwaveio-dropdown-link-active-bg: #F74D4D;
+  --brainwaveio-dropdown-link-active-bg: #4A79BA;
   --brainwaveio-dropdown-link-disabled-color: var(--brainwaveio-gray-600);
   --brainwaveio-dropdown-item-padding-x: 2rem;
   --brainwaveio-dropdown-item-padding-y: 0.5rem;
@@ -4506,7 +4506,7 @@ textarea.form-control-lg {
   --brainwaveio-dropdown-divider-bg: var(--brainwaveio-border-color);
   --brainwaveio-dropdown-link-hover-bg: rgba(255, 255, 255, 0.15);
   --brainwaveio-dropdown-link-active-color: #fff;
-  --brainwaveio-dropdown-link-active-bg: #F74D4D;
+  --brainwaveio-dropdown-link-active-bg: #4A79BA;
   --brainwaveio-dropdown-link-disabled-color: #E7E9ED;
   --brainwaveio-dropdown-header-color: #E7E9ED;
 }
@@ -4723,7 +4723,7 @@ textarea.form-control-lg {
 .nav-pills {
   --brainwaveio-nav-pills-border-radius: var(--brainwaveio-border-radius);
   --brainwaveio-nav-pills-link-active-color: #fff;
-  --brainwaveio-nav-pills-link-active-bg: #F74D4D;
+  --brainwaveio-nav-pills-link-active-bg: #4A79BA;
 }
 .nav-pills .nav-link {
   border-radius: var(--brainwaveio-nav-pills-border-radius);
@@ -5707,14 +5707,14 @@ textarea.form-control-lg {
   --brainwaveio-pagination-border-color: var(--brainwaveio-gray-200);
   --brainwaveio-pagination-border-radius: var(--brainwaveio-border-radius);
   --brainwaveio-pagination-hover-color: #fff;
-  --brainwaveio-pagination-hover-bg: #F74D4D;
-  --brainwaveio-pagination-hover-border-color: #F74D4D;
+  --brainwaveio-pagination-hover-bg: #4A79BA;
+  --brainwaveio-pagination-hover-border-color: #4A79BA;
   --brainwaveio-pagination-focus-color: var(--brainwaveio-gray-700);
   --brainwaveio-pagination-focus-bg: var(--brainwaveio-gray-100);
   --brainwaveio-pagination-focus-box-shadow: none;
   --brainwaveio-pagination-active-color: #fff;
-  --brainwaveio-pagination-active-bg: #F74D4D;
-  --brainwaveio-pagination-active-border-color: #F74D4D;
+  --brainwaveio-pagination-active-bg: #4A79BA;
+  --brainwaveio-pagination-active-border-color: #4A79BA;
   --brainwaveio-pagination-disabled-color: var(--brainwaveio-gray-700);
   --brainwaveio-pagination-disabled-bg: var(--brainwaveio-gray-100);
   --brainwaveio-pagination-disabled-border-color: var(--brainwaveio-gray-200);
@@ -5941,7 +5941,7 @@ textarea.form-control-lg {
   --brainwaveio-progress-border-radius: var(--brainwaveio-border-radius);
   --brainwaveio-progress-box-shadow: var(--brainwaveio-box-shadow-inset);
   --brainwaveio-progress-bar-color: #fff;
-  --brainwaveio-progress-bar-bg: #F74D4D;
+  --brainwaveio-progress-bar-bg: #4A79BA;
   --brainwaveio-progress-bar-transition: width 0.6s ease;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6024,8 +6024,8 @@ textarea.form-control-lg {
   --brainwaveio-list-group-disabled-color: var(--brainwaveio-gray-600);
   --brainwaveio-list-group-disabled-bg: var(--brainwaveio-card-cap-bg);
   --brainwaveio-list-group-active-color: #fff;
-  --brainwaveio-list-group-active-bg: #F74D4D;
-  --brainwaveio-list-group-active-border-color: #F74D4D;
+  --brainwaveio-list-group-active-bg: #4A79BA;
+  --brainwaveio-list-group-active-border-color: #4A79BA;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
