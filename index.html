@@ -140,34 +140,50 @@
 
         <style>
           .timeline {
-              display: flex;
-              flex-wrap: wrap;
-              justify-content: space-around;
-              padding: 0;
-          }
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 0;
+                width: 100%; /* Ensures the timeline uses full container width */
+            }
 
-          .timeline-image {
-              width: 80px; /* Set the size of the image */
-              height: 80px; /* Maintain aspect ratio */
-              border-radius: 50%; /* Circular image */
-              margin-bottom: 20px; /* Space between image and text */
-          }
+            .timeline > div {
+                border-bottom: 1px solid #f0f0f0; /* Light white line for separation */
+                margin-bottom: 20px; /* Space between entries */
+                padding-bottom: 20px; /* Padding below each entry for spacing */
+                width: 100%; /* Ensure full width utilization */
+            }
 
-          .timeline-content {
-              text-align: center;
-              padding: 0 10px; /* Padding around text */
-          }
+            .timeline-image {
+                width: 100px; /* Adjusted size for better visibility */
+                height: auto; /* Auto height for proper aspect ratio */
+                margin-right: 20px; /* Space between image and text */
+            }
 
-          .timeline-content h6 {
-              font-size: 1rem;
-              margin-bottom: 5px; /* Space between heading and date */
-          }
+            .timeline-info {
+                display: flex;
+                flex-direction: column;
+                align-items: start; /* Aligns text to the start */
+                text-align: left; /* Aligns text to the left */
+            }
 
-          .timeline-content p {
-              font-size: 0.875rem;
-          }
+            .timeline-info > div {
+                display: flex;
+                flex-direction: column;
+            }
 
-          /* Additional styling to match your design */
+            .timeline-content {
+                padding: 0 10px; /* Padding around text */
+            }
+
+            .timeline-content h6 {
+                font-size: 1rem;
+                margin-bottom: 5px; /* Space between heading and date */
+            }
+
+            .timeline-content p {
+                font-size: 0.875rem;
+            }
         </style>
 
 <section class="container special-background mb-8 mb-lg-13" id="projects-timeline">
@@ -285,27 +301,30 @@
           </section>
 
           <section class="container mb-8 mb-lg-11">
-            <div class="row justify-content-center">
-                <div class="col-md-8 col-lg-7">
-                    <h3 class="fs-4 fs-lg-3 fw-bold text-center mb-2 mb-lg-1">Professional Experience</h3>
-                    <p class="fs-8 mb-7 mb-lg-8 text-center lh-lg">Data Science professional with over 5 years of experience in diverse industries and a Master's in Business Analytics, seeking roles to drive impactful outcomes.</p>
-                </div>
-                <div class="col-12">
-                    <div class="row g-sm-2 g-lg-3 align-items-start timeline">
-                        <!-- Timeline block with image -->
-                        <div class="col-12 col-lg-4 d-flex flex-column align-items-center mb-4 mb-lg-5">
-                            <img src="assets/img/experience/TCS.png" alt="TCS Logo" class="timeline-image">
-                            <div class="timeline-content">
-                                <h6 class="fs-8 fw-bold text-center lh-lg">System Engineer</h6>
-                                <p class="fs-9 text-center">Nov 2015 - Apr 2019</p>
-                                <p class="text-center">Began as a Java Developer and Functional Tester, then transitioned to a Data Analyst role while working for an investment banking firm. There, I developed predictive models to detect credit card faults and optimized Oracle database management.</p>
-                            </div>
-                        </div>
-                        <!-- Repeat blocks for other experiences -->
-                    </div>
-                </div>
-            </div>
-        </section>
+              <div class="row justify-content-center">
+                  <div class="col-md-8 col-lg-7">
+                      <h3 class="fs-4 fs-lg-3 fw-bold text-center mb-2 mb-lg-1">Professional Experience</h3>
+                      <p class="fs-8 mb-7 mb-lg-8 text-center lh-lg">Data Science professional with over 5 years of experience in diverse industries and a Master's in Business Analytics, seeking roles to drive impactful outcomes.</p>
+                  </div>
+                  <div class="col-12">
+                      <div class="row g-sm-2 g-lg-3 align-items-start timeline">
+                          <!-- Timeline block with image -->
+                          <div class="col-12 d-flex flex-column flex-lg-row align-items-center mb-4">
+                              <img src="assets/img/experience/TCS.png" alt="TCS Logo" class="timeline-image">
+                              <div class="timeline-info">
+                                  <div>
+                                      <h6 class="fs-8 fw-bold">System Engineer - Tata Consultancy Services</h6>
+                                      <p class="fs-9">Nov 2015 - Apr 2019</p>
+                                  </div>
+                                  <p>Began as a Java Developer and Functional Tester, then transitioned to a Data Analyst role while working for an investment banking firm. There, I developed predictive models to detect credit card faults and optimized Oracle database management.</p>
+                              </div>
+                          </div>
+                          <!-- Repeat blocks for other experiences -->
+                      </div>
+                  </div>
+              </div>
+          </section>
+
          
           
           <section class="bg-1100" id="skills">
