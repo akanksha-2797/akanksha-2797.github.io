@@ -50,11 +50,15 @@
           <section class="hero-section overflow-hidden position-relative" id="home" style="background: url('assets/img/Hero/Portfolio Background.jpg') no-repeat center center; background-size: cover;">
             <div class="container h-100">
                 <div class="row h-100 align-items-center">
+                  <!-- Image Column -->
+                    <div class="col-lg-5 text-center d-none d-lg-block">
+                      <img src="assets/img/Hero/rrs.jpg" alt="Roshan Raj Singh" class="img-fluid rounded-circle" style="width: 80%;">
+                    </div>
                     <!-- Text Content Column -->
                     <div class="col-lg-7 text-center text-lg-left">
                         <h1 class="text-white fw-bold mb-2" style="font-size: 3rem;">Roshan Raj Singh</h1>
                         <p class="text-white mb-4" style="font-size: 1.5rem;">
-                            Hi there! I'm a seasoned Data Science professional with a knack for crafting data-driven solutions within the tech realm. I hold a Master's in Business Analytics from Purdue University and excel in Python, Tableau, SQL, R, among others. With over five years of leadership experience in industries like Banking, Utilities, and Consulting, I'm passionate about delivering impactful results and strategies centered around customer needs. Also, I'm a huge transit enthusiast who enjoys creating transit maps for cities around the globe on Google Maps. Currently, I'm on the lookout for exciting opportunities in Data Science.
+                            Hi there!! I'm a seasoned Data Science professional with a knack for crafting data-driven solutions within the tech realm. I hold a Master's in Business Analytics from Purdue University and excel in Python, Tableau, SQL, R, among others. With over five years of leadership experience in industries like Banking, Utilities, and Consulting, I'm passionate about delivering impactful results and strategies centered around customer needs. Also, I'm a huge transit enthusiast who enjoys creating transit maps for cities around the globe on Google Maps. Currently, I'm on the lookout for exciting opportunities in Data Science.
                         </p>
                         <div class="social-icons">
                             <a href="https://www.linkedin.com/in/roshan-raj-singh-aug1992/" target="_blank" class="text-white me-3"><i class="uil uil-linkedin" style="font-size: 2rem;"></i></a>
@@ -109,12 +113,13 @@
                   justify-content: space-between; /* Adjust spacing between text and image */
                 }
             
+                @media (min-width: 992px) {
                 .col-lg-7 {
-                  text-align: left; /* Ensure text is left aligned on large screens */
+                  text-align: right; /* Ensure text is right aligned on large screens */
                 }
             
                 .col-lg-5 {
-                  text-align: right; /* Ensure image is right aligned on large screens */
+                  text-align: left; /* Ensure image is left aligned on large screens */
                 }
             
                 .hero-section img {
