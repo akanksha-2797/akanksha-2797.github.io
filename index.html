@@ -140,50 +140,52 @@
 
         <style>
           .timeline {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                padding: 0;
-                width: 100%; /* Ensures the timeline uses full container width */
-            }
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+            width: 100%;
+          }
 
-            .timeline > div {
-                border-bottom: 1px solid #f0f0f0; /* Light white line for separation */
-                margin-bottom: 20px; /* Space between entries */
-                padding-bottom: 20px; /* Padding below each entry for spacing */
-                width: 100%; /* Ensure full width utilization */
-            }
+          .timeline > div {
+            border-bottom: 1px solid #f0f0f0; /* Light white line for separation */
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            width: 100%;
+          }
 
-            .timeline-image {
-                width: 100px; /* Adjusted size for better visibility */
-                height: auto; /* Auto height for proper aspect ratio */
-                margin-right: 20px; /* Space between image and text */
-            }
+          .timeline-image {
+            width: 100px; /* Adjusted size for better visibility */
+            height: auto; /* Auto height for proper aspect ratio */
+            margin-right: 20px; /* Space between image and text */
+            align-self: flex-start; /* Align image to the top of the flex container */
+          }
 
-            .timeline-info {
-                display: flex;
-                flex-direction: column;
-                align-items: start; /* Aligns text to the start */
-                text-align: left; /* Aligns text to the left */
-            }
+          .timeline-info {
+            display: flex;
+            flex-direction: column;
+            align-items: start; /* Aligns text to the start */
+            text-align: left; /* Aligns text to the left */
+          }
 
-            .timeline-info > div {
-                display: flex;
-                flex-direction: column;
-            }
+          .timeline-info > div {
+            display: flex;
+            flex-direction: column;
+          }
 
-            .timeline-content {
-                padding: 0 10px; /* Padding around text */
-            }
+          .timeline-content {
+            padding: 0 10px; /* Padding around text */
+          }
 
-            .timeline-content h6 {
-                font-size: 1rem;
-                margin-bottom: 5px; /* Space between heading and date */
-            }
+          .timeline-content h6 {
+            font-size: 1rem;
+            margin-bottom: 5px; /* Space between heading and date */
+          }
 
-            .timeline-content p {
-                font-size: 0.875rem;
-            }
+          .timeline-content p {
+            font-size: 0.875rem;
+          }
+
         </style>
 
         <style>
