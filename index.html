@@ -127,14 +127,15 @@
         
         <style>
           .special-background {
-            background-color: #718b94; /* Light blue color */
-            color: white; /* White text color for content within this section */
+            background: url('assets/img/projects/Background Image.jpg') no-repeat center center;
+            background-size: cover; /* Cover the entire section */
+            color: white; /* Set text color to white if desired */
             width: 100%;
             padding: 0;
-            margin: 0 auto; /* Center the content if necessary */
+            margin: 0 auto; /* Ensure the container is centered */
           }
 
-          /* Specific adjustments for headings and links within the special-background section */
+          /* Ensure all text in this section is white */
           .special-background h1,
           .special-background h2,
           .special-background h3,
@@ -143,11 +144,11 @@
             color: white;
           }
 
-          /* Ensure links remain white even when visited */
           .special-background a:link,
           .special-background a:visited {
-            color: white;
+            color: white; /* Keeps links white */
           }
+
 
           .project-section, .timeline {
             margin-bottom: 4rem; /* Adds more space below each section */
