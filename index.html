@@ -34,42 +34,45 @@
       <div class="content">
         <style>
           /* Ensure the navbar content is centered */
-            #navbar-content {
-                justify-content: center; /* Center the navbar items */
-            }
+          .navbar-collapse {
+              justify-content: center; /* Center the navbar items */
+          }
 
-            /* Style for normal navigation links */
-            .nav-link {
-                color: #aaa; /* Dim color for inactive state */
-                transition: color 0.3s; /* Smooth transition for color change */
-            }
+          /* Style for normal navigation links */
+          .nav-link {
+              color: #aaa; /* Dim color for inactive state */
+              transition: color 0.3s; /* Smooth transition for color change */
+          }
 
-            /* Style for active navigation link */
-            .nav-link.active {
-                color: white; /* White color for active state */
-                font-weight: bold; /* Optional: makes active link bolder */
-            }
+          /* Style for active navigation link */
+          .nav-link.active {
+              color: white; /* White color for active state */
+              font-weight: bold; /* Optional: makes active link bolder */
+          }
 
-            /* Hover effect for navigation links */
-            .nav-link:hover {
-                color: white;
-                text-decoration: none; /* Removes underline on hover */
-            }
+          /* Hover effect for navigation links */
+          .nav-link:hover {
+              color: white;
+              text-decoration: none; /* Removes underline on hover */
+          }
         </style>
         <nav class="navbar navbar-expand-md fixed-top" id="navbar" data-navbar-soft-on-scroll="data-navbar-soft-on-scroll">
-          <div class="container-fluid px-0"><button class="navbar-toggler border-0 pe-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse justify-content-md-end" id="navbar-content" data-navbar-collapse="data-navbar-collapse">
-              <ul class="navbar-nav gap-md-2 gap-lg-6 pt-x1 pb-1 pt-md-0 pb-md-0" data-navbar-nav="data-navbar-nav">
-                <li class="nav-item"> <a class="nav-link lh-xl" href="#home">About</a></li>
-                <li class="nav-item"> <a class="nav-link lh-xl" href="#projects">Projects</a></li>
-                <li class="nav-item"> <a class="nav-link lh-xl" href="#experience">Professional Experience</a></li>
-                <li class="nav-item"> <a class="nav-link lh-xl" href="#skills">Skill Set</a></li>
-                <li class="nav-item"> <a class="nav-link lh-xl" target="_blank" href="assets/files/Roshan Resume.pdf">Resume</a></li>
-                <li class="nav-item"> <a class="nav-link lh-xl" href="#footer">Contact</a></li>
-              </ul>
-            </div>
+          <div class="container-fluid px-0">
+              <button class="navbar-toggler border-0 pe-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-center" id="navbar-content">
+                  <ul class="navbar-nav gap-md-2 gap-lg-6 pt-x1 pb-1 pt-md-0 pb-md-0">
+                      <li class="nav-item"><a class="nav-link lh-xl" href="#home">About</a></li>
+                      <li class="nav-item"><a class="nav-link lh-xl" href="#projects">Projects</a></li>
+                      <li class="nav-item"><a class="nav-link lh-xl" href="#experience">Professional Experience</a></li>
+                      <li class="nav-item"><a class="nav-link lh-xl" href="#skills">Skill Set</a></li>
+                      <li class="nav-item"><a class="nav-link lh-xl" target="_blank" href="assets/files/Roshan Resume.pdf">Resume</a></li>
+                      <li class="nav-item"><a class="nav-link lh-xl" href="#footer">Contact</a></li>
+                  </ul>
+              </div>
           </div>
-        </nav>
+        </nav>      
         <div data-bs-target="#navbar" data-bs-spy="scroll" tabindex="0">
           <!-- Hero Section with Background Image -->
           <section class="hero-section overflow-hidden position-relative" id="home" style="background: url('assets/img/Hero/Portfolio Background.jpg') no-repeat center center; background-size: cover;">
