@@ -49,74 +49,81 @@
           <!-- Hero Section with Background Image -->
           <section class="hero-section overflow-hidden position-relative" id="home" style="background: url('assets/img/Hero/Portfolio Background.jpg') no-repeat center center; background-size: cover;">
             <div class="container h-100">
-              <div class="row h-100 align-items-center justify-content-center">
-                <div class="col-lg-7 text-center text-lg-left">
-                  <h1 class="text-white fw-bold mb-2" style="font-size: 3rem;">Roshan Raj Singh</h1>
-                  <p class="text-white mb-4" style="font-size: 1.5rem;">
-                    Hi there! I'm a seasoned Data Science professional with a knack for crafting data-driven solutions within the tech realm. I hold a Master's in Business Analytics from Purdue University and excel in Python, Tableau, SQL, R, among others. With over five years of leadership experience in industries like Banking, Utilities, and Consulting, I'm passionate about delivering impactful results and strategies centered around customer needs. Also, I'm a huge transit enthusiast who enjoys creating transit maps for cities around the globe on Google Maps. Currently, I'm on the lookout for exciting opportunities in Data Science.
-                  </p>
-                  <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/roshan-raj-singh-aug1992/" target="_blank" class="text-white me-3"><i class="uil uil-linkedin" style="font-size: 2rem;"></i></a>
-                    <a href="https://github.com/Roshan0808" target="_blank" class="text-white me-3"><i class="uil uil-github" style="font-size: 2rem;"></i></a>
-                    <a href="mailto:roshanrajsingh0808@gmail.com" target="_blank" class="text-white me-3"><i class="uil uil-envelope" style="font-size: 2rem;"></i></a>
-                    <a href="assets/files/Roshan Resume.pdf" target="_blank" class="text-white"><i class="uil uil-file" style="font-size: 2rem;"></i></a>
-                  </div>
+                <div class="row h-100 align-items-center">
+                    <!-- Text Content Column -->
+                    <div class="col-lg-7 text-center text-lg-left">
+                        <h1 class="text-white fw-bold mb-2" style="font-size: 3rem;">Roshan Raj Singh</h1>
+                        <p class="text-white mb-4" style="font-size: 1.5rem;">
+                            Hi there! I'm a seasoned Data Science professional with a knack for crafting data-driven solutions within the tech realm. I hold a Master's in Business Analytics from Purdue University and excel in Python, Tableau, SQL, R, among others. With over five years of leadership experience in industries like Banking, Utilities, and Consulting, I'm passionate about delivering impactful results and strategies centered around customer needs. Also, I'm a huge transit enthusiast who enjoys creating transit maps for cities around the globe on Google Maps. Currently, I'm on the lookout for exciting opportunities in Data Science.
+                        </p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/roshan-raj-singh-aug1992/" target="_blank" class="text-white me-3"><i class="uil uil-linkedin" style="font-size: 2rem;"></i></a>
+                            <a href="https://github.com/Roshan0808" target="_blank" class="text-white me-3"><i class="uil uil-github" style="font-size: 2rem;"></i></a>
+                            <a href="mailto:roshanrajsingh0808@gmail.com" target="_blank" class="text-white me-3"><i class="uil uil-envelope" style="font-size: 2rem;"></i></a>
+                            <a href="assets/files/Roshan Resume.pdf" target="_blank" class="text-white"><i class="uil uil-file" style="font-size: 2rem;"></i></a>
+                        </div>
+                    </div>
+                    <!-- Image Column -->
+                    <div class="col-lg-5 text-center d-none d-lg-block">
+                        <img src="assets/img/Hero/rrs.jpg" alt="Roshan Raj Singh" class="img-fluid rounded-circle" style="width: 80%;">
+                    </div>
                 </div>
-                <div class="col-lg-5 d-none d-lg-block text-center">
-                  <img src="assets/img/Hero/rrs.jpg" alt="Roshan Raj Singh" class="img-fluid rounded-circle" style="width: 80%;">
-                </div>
-              </div>
             </div>
             <div class="position-absolute bottom-0 start-0 end-0 z-1">
-              <img class="wave mb-md-n2" src="assets/img/illustrations/Wave.svg" alt="Wave Illustration" />
+                <img class="wave mb-md-n2" src="assets/img/illustrations/Wave.svg" alt="Wave Illustration" />
             </div>
             <style>
               .hero-section {
                 position: relative;
                 z-index: 1;
-                height: 100vh; /* Full viewport height */
-                color: white; /* Ensures text is visible on a likely dark background */
-                padding-top: 100px; /* Adjust based on your navbar height */
+                height: 100vh;
+                color: white;
+                padding-top: 100px;
                 background: url('assets/img/Hero/Portfolio Background.jpg') no-repeat center center;
                 background-size: cover;
               }
             
-              .hero-section .container {
+              .container.h-100 {
                 height: 100%;
               }
             
+              .row.h-100 {
+                height: 100%;
+                align-items: center;
+              }
+            
               .hero-section h1 {
-                font-size: 3rem; /* Larger font size for heading */
+                font-size: 3rem;
               }
             
               .hero-section p {
-                font-size: 1.5rem; /* Larger font size for paragraph */
+                font-size: 1.5rem;
               }
             
-              .hero-section .social-icons i {
-                font-size: 2rem; /* Larger icons */
-              }
-            
-              .hero-section img {
-                width: 80%; /* Bigger image */
+              .social-icons i {
+                font-size: 2rem;
               }
             
               @media (min-width: 992px) {
-                .hero-section .row {
-                  text-align: left; /* Align text to the left on larger screens */
+                .row.h-100 {
+                  justify-content: space-between; /* Adjust spacing between text and image */
                 }
             
-                .hero-section .col-lg-7, .hero-section .col-lg-5 {
-                  display: block;
-                  text-align: center;
+                .col-lg-7 {
+                  text-align: left; /* Ensure text is left aligned on large screens */
                 }
             
-                .hero-section .col-lg-7 {
-                  text-align: left; /* Text aligned left in large screens */
+                .col-lg-5 {
+                  text-align: right; /* Ensure image is right aligned on large screens */
+                }
+            
+                .hero-section img {
+                  width: 100%; /* Use full width of the column for the image */
                 }
               }
             </style>
-          </section>
+        </section>
+
 
           <!-- section class="container border-bottom mb-8 mb-lg-10">
             <div class="row pb-6 pb-lg-8 g-3 g-lg-8 px-3">
