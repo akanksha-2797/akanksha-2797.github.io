@@ -186,6 +186,42 @@
             }
         </style>
 
+        <style>
+          .skills-section {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                padding: 20px;
+                background: #F5F5F5; /* Light grey background for visibility */
+            }
+
+            .skill-card {
+                background: white;
+                border: 1px solid #CCC; /* Light grey border for definition */
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                width: 300px; /* Fixed width for each card */
+                padding: 15px;
+                border-radius: 5px;
+            }
+
+            .skill-card h5 {
+                color: #333;
+                margin-bottom: 10px;
+            }
+
+            .skill-card p {
+                font-size: 14px;
+                color: #666;
+            }
+
+            @media (max-width: 768px) {
+                .skills-section {
+                    flex-direction: column;
+                }
+            }
+        </style>
+
 <section class="container special-background mb-8 mb-lg-13" id="projects-timeline">
         <section class="container mb-8 mb-lg-13 pink-background" id="projects">
             <!-- project 1 final starts here-->  
