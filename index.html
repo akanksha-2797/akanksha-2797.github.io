@@ -126,10 +126,29 @@
         </section>
         
         <style>
-          .pink-background {
-            background-color: #add8e6; /* Your specific pink color */
-            width: 100%; /* Ensure it covers the full width */
+          .special-background {
+            background-color: #428da6; /* Light blue color */
+            color: white; /* White text color for content within this section */
+            width: 100%;
+            padding: 0;
+            margin: 0 auto; /* Center the content if necessary */
           }
+
+          /* Specific adjustments for headings and links within the special-background section */
+          .special-background h1,
+          .special-background h2,
+          .special-background h3,
+          .special-background p,
+          .special-background a {
+            color: white;
+          }
+
+          /* Ensure links remain white even when visited */
+          .special-background a:link,
+          .special-background a:visited {
+            color: white;
+          }
+
           .project-section, .timeline {
             margin-bottom: 4rem; /* Adds more space below each section */
           }
@@ -140,6 +159,7 @@
           .mb-4, .mb-8 { margin-bottom: 1.5rem; } /* mb-8 for larger bottom margin where necessary */
         </style>
 
+<section class="container special-background mb-8 mb-lg-13" id="projects-timeline">
         <section class="container mb-8 mb-lg-13 pink-background" id="projects">
             <!-- project 1 final starts here-->  
              <div class="col-md-12 col-lg-12 pb-2">
@@ -302,6 +322,7 @@
               </div>
             </div>
           </section>
+  </section>         
           
           <section class="bg-1100" id="skills">
             <div class="container py-2 py-lg-6">
