@@ -32,6 +32,30 @@
     <!-- ===============================================--><!--    Main Content--><!-- ===============================================-->
     <main class="main" id="top">
       <div class="content">
+        <style>
+          /* Ensure the navbar content is centered */
+            #navbar-content {
+                justify-content: center; /* Center the navbar items */
+            }
+
+            /* Style for normal navigation links */
+            .nav-link {
+                color: #aaa; /* Dim color for inactive state */
+                transition: color 0.3s; /* Smooth transition for color change */
+            }
+
+            /* Style for active navigation link */
+            .nav-link.active {
+                color: white; /* White color for active state */
+                font-weight: bold; /* Optional: makes active link bolder */
+            }
+
+            /* Hover effect for navigation links */
+            .nav-link:hover {
+                color: white;
+                text-decoration: none; /* Removes underline on hover */
+            }
+        </style>
         <nav class="navbar navbar-expand-md fixed-top" id="navbar" data-navbar-soft-on-scroll="data-navbar-soft-on-scroll">
           <div class="container-fluid px-0"><button class="navbar-toggler border-0 pe-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse justify-content-md-end" id="navbar-content" data-navbar-collapse="data-navbar-collapse">
@@ -189,42 +213,6 @@
           }
 
         </style>
-
-        /*<style>
-          .skills-section {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: 10px;
-                padding: 20px;
-                background: #F5F5F5;
-            }
-
-            .skill-card {
-                background: white;
-                border: 1px solid #CCC; 
-                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-                width: 300px;
-                padding: 15px;
-                border-radius: 5px;
-            }
-
-            .skill-card h5 {
-                color: #333;
-                margin-bottom: 10px;
-            }
-
-            .skill-card p {
-                font-size: 14px;
-                color: #666;
-            }
-
-            @media (max-width: 768px) {
-                .skills-section {
-                    flex-direction: column;
-                }
-            }
-        </style-->*/
 
 <section class="container special-background mb-8 mb-lg-13" id="projects-timeline">
         <section class="container mb-8 mb-lg-13 pink-background" id="projects">
