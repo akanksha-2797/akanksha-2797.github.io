@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- ===============================================--><!--    Document Title--><!-- ===============================================-->
-    <title>Roshan Raj Singh</title>
+    <title>Roshan's Portfolio</title>
 
     <!-- ===============================================--><!--    Favicons--><!-- ===============================================-->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
@@ -63,10 +63,10 @@
               </button>
               <div class="collapse navbar-collapse justify-content-center" id="navbar-content">
                   <ul class="navbar-nav gap-md-2 gap-lg-6 pt-x1 pb-1 pt-md-0 pb-md-0">
-                      <li class="nav-item"><a class="nav-link lh-xl" href="#home">About</a></li>
+                      <li class="nav-item"><a class="nav-link lh-xl" href="#home">Home</a></li>
                       <li class="nav-item"><a class="nav-link lh-xl" href="#projects">Projects</a></li>
                       <li class="nav-item"><a class="nav-link lh-xl" href="#experience">Professional Experience</a></li>
-                      <li class="nav-item"><a class="nav-link lh-xl" href="#skills">Skill Set</a></li>
+                      <li class="nav-item"><a class="nav-link lh-xl" href="#skills">Skills</a></li>
                       <li class="nav-item"><a class="nav-link lh-xl" target="_blank" href="assets/files/Roshan Resume.pdf">Resume</a></li>
                       <li class="nav-item"><a class="nav-link lh-xl" href="#footer">Contact</a></li>
                   </ul>
@@ -79,8 +79,13 @@
             <div class="container h-100">
                 <div class="row h-100 align-items-center">
                   <!-- Image Column -->
+                    <style>
+                    .custom-rounded {
+                      border-radius: 10px;
+                    }
+                    </style>
                     <div class="col-lg-5 text-center d-none d-lg-block">
-                      <img src="assets/img/Hero/rrs.jpg" alt="Roshan Raj Singh" class="img-fluid rounded-circle" style="width: 80%;">
+                      <img src="assets/img/Hero/rrs.jpg" alt="Roshan Raj Singh" class="img-fluid custom-rounded">
                     </div>
                     <!-- Text Content Column -->
                     <div class="col-lg-7 text-center text-lg-left">
@@ -165,6 +170,23 @@
           .lh-lg { line-height: 1.5; }
           .mb-4, .mb-8 { margin-bottom: 1.5rem; } /* mb-8 for larger bottom margin where necessary */
 
+          .btn-custom {
+              background-color: #007BFF; /* Blue color */
+              color: white;
+              border-radius: 20px; /* Rounded corners */
+              padding: 0.5rem 1rem; /* Adjust padding to control space around text */
+              font-size: 1.25rem; /* Larger text */
+              border: none;
+              transition: all 0.3s; /* Smooth transition for hover effects */
+          }
+
+          .btn-custom:hover, .btn-custom:focus {
+              background-color: #0056b3; /* Darker shade of blue on hover */
+              box-shadow: 0 0 15px rgba(0, 251, 255, 0.5); /* Glowing effect */
+              color: white;
+              text-decoration: none;
+          }
+
         </style>
 
         <style>
@@ -237,8 +259,9 @@
                     <p class="text-center">
                         We developed a dashboard for a leading welding equipment manufacturer that consolidated multiple KPIs, enhancing delivery performance by 40% and eliminating reporting latency in their supply chain. Simultaneously, we implemented a regression model that accurately forecasted supplier risk scores and the likelihood of material stockouts, achieving an R-squared value of 98.7%
                     </p>
+                    
                     <div class="text-center">
-                        <a class="btn btn-primary btn-lg" href="assets/files/Real Time Delivery Trend Performance_Final.pdf" target="_blank">View Project</a>
+                        <a class="btn btn-custom btn-lg" href="assets/files/Real Time Delivery Trend Performance_Final.pdf" target="_blank">View</a>
                     </div>
                 </div>
               </div>
@@ -258,7 +281,7 @@
                     We developed an LSTM model employing advanced algorithms and a rolling window training approach to predict cryptocurrency prices, achieving an RMSE below 0.12, which indicated remarkable accuracy across various cryptocurrencies in the volatile market. Additionally, we compared this model's forecasting performance with that of XGBoost, a traditional tree-based model, to validate our approach.
                   </p>
                   <div class="text-center">
-                    <a class="btn btn-primary btn-lg" href="assets/files/Unveiling the Future - Forecasting Cryptocurrency Trends.pdf" target="_blank">View Project</a>
+                    <a class="btn btn-custom btn-lg" href="assets/files/Unveiling the Future - Forecasting Cryptocurrency Trends.pdf" target="_blank">View</a>
                   </div>
                 </div>
               </div>
@@ -280,7 +303,7 @@
                     We spearheaded the development of a classification model for the NCAA's Cross Roads Classic competition to identify ticket-buying customers. By analyzing past data and utilizing predictive models, our team achieved an accuracy of over 98%. Additionally, the F1 score also reached 98%, indicating that our model was both balanced and highly effective. This model enables the NCAA to efficiently identify and market their events to potential ticket buyers, enhancing both the student-athletes’ experience and the financial viability of the championships.
                   </p>
                   <div class="text-center">
-                    <a class="btn btn-primary btn-lg" href="assets/files/NCAA Predicting High Value Customers.twbx" target="_blank">View Project</a>
+                    <a class="btn btn-custom btn-lg" href="assets/files/NCAA Predicting High Value Customers.twbx" target="_blank">View</a>
                   </div>
                 </div>
             </div>
@@ -302,7 +325,7 @@
                     We harnessed advanced data analytics and AI to develop a predictive model for Airbnb's 'Superhost' status, achieving 84% accuracy and 82% sensitivity. This high-performing model was pivotal in identifying critical retention factors, enabling us to provide Airbnb with actionable insights to mitigate host attrition effectively. By understanding which factors most influence Superhost churn, our team provided targeted recommendations to help maintain the Superhost community, crucial for Airbnb's reputation and operational success.
                   </p>
                   <div class="text-center">
-                    <a class="btn btn-primary btn-lg" href="assets/files/Airbnb Superhost Churn Prediction.pdf" target="_blank">View Project</a>
+                    <a class="btn btn-custom btn-lg" href="assets/files/Airbnb Superhost Churn Prediction.pdf" target="_blank">View</a>
                   </div>
                 </div>
             </div>
@@ -323,7 +346,7 @@
                     I implemented data mining algorithms in SAS Enterprise Miner to predict firm bankruptcy with over 91% accuracy. My project involved analyzing a complex dataset of 10,000 records and addressing challenges like missing data and outliers. I compared over eight different models to identify the most effective approach, significantly enhancing model accuracy through strategic model selection and sophisticated preprocessing techniques.
                   </p>
                   <div class="text-center">
-                    <a class="btn btn-primary btn-lg" href="assets/files/Firm Bankruptcy Prediction Presentation.pdf" target="_blank">View Project</a>
+                    <a class="btn btn-custom btn-lg" href="assets/files/Firm Bankruptcy Prediction Presentation.pdf" target="_blank">View</a>
                   </div>
                 </div>
             </div>
