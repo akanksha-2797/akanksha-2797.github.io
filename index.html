@@ -87,8 +87,11 @@
                         <h1 class="text-white fw-bold mb-2" style="font-size: 3rem; text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.75);">Roshan Raj Singh</h1>
                         <p class="text-white mb-4" style="font-size: 1.5rem; text-align: center; text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.75);">
                             Hi there!<br>
+                            <br>
                             I'm a seasoned Data Science professional with a knack for crafting data-driven solutions within the tech realm. I hold a Master's in Business Analytics from Purdue University and excel in Python, Tableau, SQL, R, among others.<br>
+                            <br>
                             With over five years of leadership experience in industries like Banking, Utilities, and Consulting, I'm passionate about delivering impactful results and strategies centered around customer needs.<br>
+                            <br>
                             Also, I'm a huge transit enthusiast who enjoys creating transit maps for cities around the globe on Google Maps. Currently I am on the lookout for new opportunities in Data Science.
                         </p>
                         <div class="social-icons">
@@ -146,6 +149,19 @@
             .col-lg-5 {
               text-align: left; /* Align image to the left on larger screens */
             }
+          }
+          .col-lg-5.d-none.d-lg-block {
+              display: flex;
+              align-items: center; /* Vertically centers the content within the container */
+              justify-content: center; /* Horizontally centers the content within the container */
+              padding: 20px; /* Adds space around the content */
+              height: 100%; /* Make sure the container has a defined height */
+          }
+
+          .col-lg-5.d-none.d-lg-block .img-fluid.custom-rounded {
+              max-height: 100%; /* Slightly less than 100% to ensure it doesn't touch the edges */
+              max-width: 90%; /* Maintains the aspect ratio while ensuring it doesn't touch the edges */
+              border-radius: 10px; /* Maintains the rounded corners */
           }
         </style>
         
