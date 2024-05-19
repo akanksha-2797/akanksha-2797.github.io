@@ -79,13 +79,22 @@
             <div class="container h-100">
                 <div class="row h-100 align-items-center">
                   <!-- Image Column -->
-                    <style>
-                    .custom-rounded {
-                      border-radius: 10px;
-                    }
+                      <style>
+                        .col-lg-5 {
+                            display: flex;
+                            align-items: center; /* Vertically centers the content within the container */
+                            justify-content: center; /* Horizontally centers the content within the container */
+                            padding: 20px; /* Adds space around the content */
+                        }
+                    
+                        .img-fluid.custom-rounded {
+                            max-height: 100%; /* Ensures the image does not overflow its container */
+                            max-width: 100%; /* Maintains the aspect ratio */
+                            border-radius: 10px; /* Maintains the rounded corners */
+                        }
                     </style>
                     <div class="col-lg-5 text-center d-none d-lg-block">
-                      <img src="assets/img/Hero/rrs.jpg" alt="Roshan Raj Singh" class="img-fluid custom-rounded">
+                        <img src="assets/img/Hero/rrs.jpg" alt="Roshan Raj Singh" class="img-fluid custom-rounded">
                     </div>
                     <!-- Text Content Column -->
                     <div class="col-lg-7 text-center text-lg-left">
@@ -171,17 +180,18 @@
           .mb-4, .mb-8 { margin-bottom: 1.5rem; } /* mb-8 for larger bottom margin where necessary */
 
           .btn-custom {
-              background-color: #007BFF; /* Blue color */
+              background-color: #0056b3; /* Blue color */
               color: white;
               border-radius: 20px; /* Rounded corners */
               padding: 0.5rem 1rem; /* Adjust padding to control space around text */
               font-size: 1.25rem; /* Larger text */
               border: none;
               transition: all 0.3s; /* Smooth transition for hover effects */
+              font-weight: 400;
           }
 
           .btn-custom:hover, .btn-custom:focus {
-              background-color: #0056b3; /* Darker shade of blue on hover */
+              background-color: #00fee570; /* Darker shade of blue on hover */
               box-shadow: 0 0 15px rgba(0, 251, 255, 0.5); /* Glowing effect */
               color: white;
               text-decoration: none;
