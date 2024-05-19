@@ -248,28 +248,25 @@
         </style>
 
         <style>
-            #skills .bg-1100 {
-                background-color: #1100; /* Adjust background color as needed */
+            #skills {
+                background-color: #ffffff; /* Set background to white */
             }
 
-            #skills .text-uppercase {
-                text-transform: uppercase;
-            }
-
-            #skills .fw-bold {
-                font-weight: bold;
+            #skills h3 {
+                color: #000000; /* Black color for Skills heading */
+                font-size: 2rem; /* Making the heading larger */
             }
 
             #skills .fw-light {
-                font-weight: 300; /* Lighter font for sub-text */
+                font-weight: 300; /* Lighter font weight for sub-text */
+                font-size: 1.25rem; /* Appropriate size for sub-heading */
+                text-transform: none; /* No uppercase */
+                color: #333; /* Dark grey color for visibility */
             }
 
-            #skills .p-3 {
-                padding: 1.5rem; /* Spacing inside the card */
-            }
-
-            #skills .mb-3 {
-                margin-bottom: 1rem;
+            #skills .container-fluid {
+                padding-right: 0;
+                padding-left: 0;
             }
 
             #skills .rounded-2 {
@@ -280,31 +277,16 @@
                 box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
             }
 
-            #skills .fs-4, .fs-lg-3 {
-                font-size: 1.5rem; /* Adjust size for large screens */
-            }
-
-            #skills .lh-sm {
-                line-height: 1.25;
-            }
-
-            #skills .border {
-                border: 1px solid #ccc; /* Adds a light border around the cards */
-            }
-
-            #skills .text-white {
-                color: #ffffff;
-            }
-
-            #skills .text-center {
-                text-align: center;
-            }
-
             #skills .gap-2 {
-                gap: 0.5rem; /* Space between logos */
+                gap: 10px; /* Increasing gap between logos */
             }
 
+            #skills img {
+                flex: 0 0 20%; /* Ensures no more than 5 logos per row */
+                max-width: 20%; /* Adjusts max width to ensure even distribution */
+            }
         </style>
+        
 <section class="container special-background mb-8 mb-lg-13" id="projects-timeline">
         <section class="container mb-8 mb-lg-13 pink-background" id="projects">
             <!-- project 1 final starts here-->  
@@ -485,39 +467,31 @@
               </div>
           </section>
 
-         
-          
           <section class="bg-1100" id="skills">
-            <div class="container py-2 py-lg-6">
+            <div class="container-fluid py-2 py-lg-6">
                 <div class="row justify-content-center">
-                    <div class="col-md-12 col-lg-12 pb-2">
-                        <h3 class="fs-4 fs-lg-3 fw-bold text-center mb-2 mb-lg-x1 lh-sm text-white">Skills</h3>
-                    </div>
-                    <div class="col-12">
-                        <div class="text-center bg-white border shadow-sm rounded-2 p-3 mb-3">
-                            
-                            <p class="text-uppercase fw-light mb-3">Languages and Tools & Technology</p>
+                    <div class="col-12 text-center">
+                        <h3 class="fs-4 fs-lg-3 fw-bold mb-2 mb-lg-x1 lh-sm">Skills</h3>
+                        <div class="bg-white border shadow-sm rounded-2 p-3 mb-3">
+                            <p class="fw-light mb-3" style="font-size: 1.25rem;">Languages and Tools & Technology</p>
                             <div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
-                                <!-- Place each logo image here -->
-                                <img src="assets/img/icons/Python.png" alt="Python" style="width: 60px;">
-                                <img src="assets/img/icons/SQL.png" alt="SQL" style="width: 60px;">
-                                <img src="assets/img/icons/R.png" alt="R" style="width: 60px;">
-                                <img src="assets/img/icons/Tableau.png" alt="Tableau" style="width: 60px;">
-                                <img src="assets/img/icons/Power BI.png" alt="Power BI" style="width: 60px;">
-                                <br>
-                                <img src="assets/img/icons/Google_Cloud_Platform.png" alt="Google_Cloud_Platform" style="width: 60px;">
-                                <img src="assets/img/icons/Hadoop.png" alt="Hadoop" style="width: 60px;">
-                                <img src="assets/img/icons/SAS.png" alt="SAS" style="width: 60px;">
-                                <img src="assets/img/icons/AWS.png" alt="AWS" style="width: 60px;">
-                                <img src="assets/img/icons/Excel.png" alt="MS Excel" style="width: 60px;">
-                                <!-- Add more logos as needed -->
+                                <img src="assets/img/icons/Python.png" alt="Python">
+                                <img src="assets/img/icons/SQL.png" alt="SQL">
+                                <img src="assets/img/icons/R.png" alt="R">
+                                <img src="assets/img/icons/Tableau.png" alt="Tableau">
+                                <img src="assets/img/icons/Power BI.png" alt="Power BI">
+                                <img src="assets/img/icons/Google_Cloud_Platform.png" alt="Google Cloud Platform">
+                                <img src="assets/img/icons/Hadoop.png" alt="Hadoop">
+                                <img src="assets/img/icons/SAS.png" alt="SAS">
+                                <img src="assets/img/icons/AWS.png" alt="AWS">
+                                <img src="assets/img/icons/Excel.png" alt="MS Excel">
                             </div>
                         </div>
-                        <!-- You can replicate the above div for Certifications and Awards if needed -->
                     </div>
                 </div>
             </div>
         </section>
+          
         
         </div><button class="btn scroll-to-top text-white rounded-circle d-flex justify-content-center align-items-center bg-primary" data-scroll-top="data-scroll-top"><span class="uil uil-angle-up"></span></button>
         <footer class="pt-2 pt-lg-2" id="footer">
