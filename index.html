@@ -80,16 +80,16 @@
                 <div class="row h-100 align-items-center">
                   <!-- Image Column -->
                       <style>
-                        .col-lg-5 {
+                        .col-lg-5.d-none.d-lg-block {
                             display: flex;
                             align-items: center; /* Vertically centers the content within the container */
                             justify-content: center; /* Horizontally centers the content within the container */
                             padding: 20px; /* Adds space around the content */
-                        }
-                    
-                        .img-fluid.custom-rounded {
-                            max-height: 100%; /* Ensures the image does not overflow its container */
-                            max-width: 100%; /* Maintains the aspect ratio */
+                            height: 100%; /* Make sure the container has a defined height */
+                        }                   
+                        .col-lg-5.d-none.d-lg-block .img-fluid.custom-rounded {
+                            max-height: 90%; /* Ensures the image does not overflow its container */
+                            max-width: 90%; /* Maintains the aspect ratio */
                             border-radius: 10px; /* Maintains the rounded corners */
                         }
                     </style>
