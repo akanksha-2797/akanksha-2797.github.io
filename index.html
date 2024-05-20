@@ -252,16 +252,19 @@
               background-color: #ffffff; /* Ensures the background is white */
           }
 
- 
+          #skills h3 {
+              font-size: 2rem; /* Heading size */
+              color: #000; /* Black color for headings */
+              font-weight: bold; /* Bold font for headings */
+          }
 
-          #skills .fw-light {
-              font-weight: 300; /* Lighter font weight for sub-text */
+          #skills p {
               font-size: 1.25rem; /* Sub-heading size */
-              color: #333; /* Dark grey color for visibility */
+              color: #333; /* Dark grey for text */
           }
 
           #skills .rounded-2 {
-              border-radius: 0.5rem; /* Rounded corners */
+              border-radius: 0.5rem; /* Rounded corners for boxes */
           }
 
           #skills .shadow-sm {
@@ -281,27 +284,11 @@
               gap: 10px; /* Space between logos */
           }
 
-          /* Ensuring uniform heading styles */
-          .fs-4, .fs-lg-3 {
-              font-size: 1.5rem; /* Adjust if needed to match exactly across sections */
-          }
-
-          .fw-bold {
-              font-weight: bold; /* Ensure boldness is consistent */
-          }
-
-          /* Skills section adjustments */
-          #skills h3 {
-              font-size: 1.5rem; /* This should match the .fs-4 or .fs-lg-3 class */
-              color: #000; /* Consistent color */
-          }
-
           #skills .certification-logo {
               flex: 1 0 22%; /* Adjust size to make icons larger */
               max-width: 22%; /* Maximum width for each logo */
-              text-align: center;
-              margin: 5px;
-              transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+              text-align: center; /* Center text below logos */
+              margin: 5px; /* Margin around each logo */
           }
 
           #skills .certification-logo img {
@@ -310,8 +297,8 @@
           }
 
           #skills .certification-logo:hover {
-              transform: scale(1.05); /* Slightly enlarges the icon */
-              box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* White glow effect */
+              transform: scale(1.05); /* Slightly enlarges the logo on hover */
+              box-shadow: 0 0 10px rgba(251, 228, 228, 0.7); /* White glow effect on hover */
           }
         </style>
 
@@ -495,67 +482,62 @@
               </div>
           </section>
 
-        <section id="skills" style="background-color: #ffffff; padding: 20px 0;">
-          <div class="row justify-content-center m-0"> <!-- Removed container classes and added margin 0 -->
-              <div class="col-12 text-center">
-                  <h3 class="fs-4 fs-lg-3 fw-bold text-center mb-2 mb-lg-1">Skills</h3>
-                  <p class="fs-8 mb-7 mb-lg-8 text-center lh-lg">Languages and Tools & Technology</p>
-                  <div style="background-color: #ffffff; border: 1px solid #ccc; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-radius: 0.5rem; padding: 1.5rem; margin-bottom: 30px;">
-                      
-                      <div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
-                          <!-- Image logos here with styling to ensure correct sizing -->
-                          <img src="assets/img/icons/Python.png" alt="Python" style="flex: 1 0 18%; max-width: 18%;">
-                          <img src="assets/img/icons/SQL.png" alt="SQL" style="flex: 1 0 18%; max-width: 18%;">
-                          <!-- Continue for other logos -->
-                          <img src="assets/img/icons/R.png" alt="R" style="flex: 1 0 18%; max-width: 18%;">
-                          <img src="assets/img/icons/Tableau.png" alt="Tableau" style="flex: 1 0 18%; max-width: 18%;">
-                          <img src="assets/img/icons/Power BI.png" alt="Power BI" style="flex: 1 0 18%; max-width: 18%;">
-                          <img src="assets/img/icons/Google_Cloud_Platform.png" alt="Google Cloud Platform" style="flex: 1 0 18%; max-width: 18%;">
-                          <img src="assets/img/icons/Hadoop.png" alt="Hadoop" style="flex: 1 0 18%; max-width: 18%;">
-                          <img src="assets/img/icons/SAS.png" alt="SAS" style="flex: 1 0 18%; max-width: 18%;">
-                          <img src="assets/img/icons/AWS.png" alt="AWS" style="flex: 1 0 18%; max-width: 18%;">
-                          <img src="assets/img/icons/Excel.png" alt="MS Excel" style="flex: 1 0 18%; max-width: 18%;">
-                          <img src="assets/img/icons/Risk.png" alt="@Risk" style="flex: 1 0 18%; max-width: 18%;">
-                          <img src="assets/img/icons/Minitab.png" alt="Minitab" style="flex: 1 0 18%; max-width: 18%;">
-                          <img src="assets/img/icons/Machine Learning.png" alt="Machine Learning" style="flex: 1 0 18%; max-width: 18%;">
-                          <img src="assets/img/icons/Deep Learning.png" alt="Deep Learning" style="flex: 1 0 18%; max-width: 18%;">
-                      </div>
-                  </div>
-                  <p style="font-size: 1.25rem; color: #333; margin-bottom: 1rem; text-align: center;">Certifications</p>
-                  <div style="background-color: #ffffff; border: 1px solid #ccc; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-radius: 0.5rem; padding: 1.5rem; margin-bottom: 30px;">
-                    
-                    <div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
-                        <div class="certification-logo">
-                            <a href="https://www.credly.com/badges/cd6b3b9b-cb84-48a4-90f7-7e42bbf42a0d/linked_in_profile">
-                                <img src="assets/img/icons/Tableau_Certificate.png" alt="Tableau Certificate" style="width: 100%;">
-                            </a>
-                            <p>Tableau Desktop Specialist</p>
+          <section id="skills" style="background-color: #ffffff; padding: 20px 0;">
+            <div class="row justify-content-center m-0">
+                <div class="col-12 text-center">
+                    <h3 style="font-size: 2rem; font-weight: bold; color: #000; margin-bottom: 2rem;">Skills</h3>
+                    <div style="background-color: #ffffff; border: 1px solid #ccc; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-radius: 0.5rem; padding: 1.5rem; margin-bottom: 30px;">
+                        <p style="font-size: 1.25rem; color: #333; margin-bottom: 1rem;">Languages and Tools & Technology</p>
+                        <div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+                            <img src="assets/img/icons/Python.png" alt="Python" style="flex: 1 0 18%; max-width: 18%;">
+                            <img src="assets/img/icons/SQL.png" alt="SQL" style="flex: 1 0 18%; max-width: 18%;">
+                            <img src="assets/img/icons/R.png" alt="R" style="flex: 1 0 18%; max-width: 18%;">
+                            <img src="assets/img/icons/Tableau.png" alt="Tableau" style="flex: 1 0 18%; max-width: 18%;">
+                            <img src="assets/img/icons/Power BI.png" alt="Power BI" style="flex: 1 0 18%; max-width: 18%;">
+                            <img src="assets/img/icons/Google_Cloud_Platform.png" alt="Google Cloud Platform" style="flex: 1 0 18%; max-width: 18%;">
+                            <img src="assets/img/icons/Hadoop.png" alt="Hadoop" style="flex: 1 0 18%; max-width: 18%;">
+                            <img src="assets/img/icons/SAS.png" alt="SAS" style="flex: 1 0 18%; max-width: 18%;">
+                            <img src="assets/img/icons/AWS.png" alt="AWS" style="flex: 1 0 18%; max-width: 18%;">
+                            <img src="assets/img/icons/Excel.png" alt="MS Excel" style="flex: 1 0 18%; max-width: 18%;">
+                            <img src="assets/img/icons/Risk.png" alt="@Risk" style="flex: 1 0 18%; max-width: 18%;">
+                            <img src="assets/img/icons/Minitab.png" alt="Minitab" style="flex: 1 0 18%; max-width: 18%;">
+                            <img src="assets/img/icons/Machine Learning.png" alt="Machine Learning" style="flex: 1 0 18%; max-width: 18%;">
+                            <img src="assets/img/icons/Deep Learning.png" alt="Deep Learning" style="flex: 1 0 18%; max-width: 18%;">
                         </div>
-                        <div class="certification-logo">
-                            <a href="https://www.credly.com/badges/4f21f720-29f9-4337-b7a3-665a4809c86c/linked_in_profile">
-                                <img src="assets/img/icons/AWS Certificate.png" alt="AWS Certificate" style="width: 100%;">
-                            </a>
-                            <p>AWS Certified Cloud Practitioner</p>
-                        </div>
-                        <div class="certification-logo">
-                            <a href="https://www.credly.com/badges/b38175e2-1160-42ba-ad00-86d140f3b0fc/linked_in_profile">
-                                <img src="assets/img/icons/Azure Certificate.png" alt="Azure Certificate" style="width: 100%;">
-                            </a>
-                            <p>Microsoft Certified: Azure Fundamentals</p>
-                        </div>
-                        <div class="certification-logo">
-                            <a href="https://www.credly.com/badges/d6e11159-4be4-4551-a1cf-ac6b15b951b3/linked_in_profile">
-                                <img src="assets/img/icons/SAS Certificate.png" alt="SAS Certificate" style="width: 100%;">
-                            </a>
-                            <p>Operations Research with SAS Optimization</p>
+                    </div>
+                    <p style="font-size: 1.25rem; color: #333; margin-bottom: 1rem;">Certifications</p>
+                    <div style="background-color: #ffffff; border: 1px solid #ccc; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-radius: 0.5rem; padding: 1.5rem; margin-bottom: 30px;">
+                        <div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+                            <div class="certification-logo">
+                                <a href="https://www.credly.com/badges/cd6b3b9b-cb84-48a4-90f7-7e42bbf42a0d/linked_in_profile">
+                                    <img src="assets/img/icons/Tableau_Certificate.png" alt="Tableau Certificate" style="width: 100%;">
+                                </a>
+                                <p>Tableau Desktop Specialist</p>
+                            </div>
+                            <div class="certification-logo">
+                                <a href="https://www.credly.com/badges/4f21f720-29f9-4337-b7a3-665a4809c86c/linked_in_profile">
+                                    <img src="assets/img/icons/AWS Certificate.png" alt="AWS Certificate" style="width: 100%;">
+                                </a>
+                                <p>AWS Certified Cloud Practitioner</p>
+                            </div>
+                            <div class="certification-logo">
+                                <a href="https://www.credly.com/badges/b38175e2-1160-42ba-ad00-86d140f3b0fc/linked_in_profile">
+                                    <img src="assets/img/icons/Azure Certificate.png" alt="Azure Certificate" style="width: 100%;">
+                                </a>
+                                <p>Microsoft Certified: Azure Fundamentals</p>
+                            </div>
+                            <div class="certification-logo">
+                                <a href="https://www.credly.com/badges/d6e11159-4be4-4551-a1cf-ac6b15b951b3/linked_in_profile">
+                                    <img src="assets/img/icons/SAS Certificate.png" alt="SAS Certificate" style="width: 100%;">
+                                </a>
+                                <p>Operations Research with SAS Optimization</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                
-                
-              </div>
-          </div>
-      </section>
+            </div>
+        </section>
+        
       
           
         
