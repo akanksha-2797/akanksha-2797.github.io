@@ -278,24 +278,25 @@
               margin-bottom: 10px; /* Space between rows */
           }
 
-          #skills .d-flex {
-              flex-wrap: wrap; /* Allows logos to wrap to next line */
-              justify-content: center; /* Center align logos */
-              gap: 10px; /* Space between logos */
-          }
-
           #skills .certification-logo {
-              flex: 1 0 25%; /* Adjust size to make icons larger */
-              max-width: 25%; /* Maximum width for each logo */
-              text-align: center; /* Center text below logos */
-              margin: 0px; /* Margin around each logo */
+              flex: 1 0 20%; /* Decrease to make icons take more horizontal space if needed */
+              max-width: 20%; /* Adjust to fit 5 items per row if possible */
+              text-align: center; /* Keeps the text aligned to the center below the icons */
+              padding: 10px; /* Adds padding inside each logo container */
+              box-sizing: border-box; /* Includes padding and border in the element's total width and height */
           }
 
           #skills .certification-logo img {
-              width: 100%; /* Full width of the container */
-              height: auto; /* Maintain aspect ratio */
+              width: 100%; /* Maintains the width as per the parent container's adjusted width */
+              height: 150px; /* Adjust this value to control the display size of the icons */
+              object-fit: contain; /* Ensures the image is scaled correctly within its aspect ratio */
           }
 
+          #skills .d-flex {
+              justify-content: space-around; /* Adjusts spacing to distribute items evenly */
+              flex-wrap: wrap; /* Allows items to wrap onto the next line */
+          }
+          
           #skills .certification-logo img:hover {
               transform: scale(1.05); /* Slightly enlarges the logo on hover */
               box-shadow: 0 0 10px rgba(254, 217, 217, 0.7); /* White glow effect on hover */
