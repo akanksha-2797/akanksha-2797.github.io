@@ -283,13 +283,23 @@
                 justify-content: center; /* Center align logos */
                 gap: 10px; /* Space between logos */
             }
-            .glow-on-hover {
-              transition: box-shadow 0.3s ease-in-out;
+            .certificate-link {
+              text-decoration: none; /* Removes underline from links */
+              color: black; /* Sets text color */
+              display: flex; /* Enables flexbox layout */
+              flex-direction: column; /* Stacks elements vertically */
+              align-items: center; /* Centers items horizontally */
             }
 
-            .glow-on-hover:hover {
-              box-shadow: 0 0 8px rgba(248, 201, 201, 0.8);
+            .certificate-link span {
+              margin-top: 8px; /* Space between image and text */
+              transition: color 0.3s ease; /* Smooth transition for color change */
             }
+
+            .certificate-link:hover span {
+              color: #add8e6; /* Light blue color on hover */
+            }
+
         </style>
 
 <section class="container special-background mb-8 mb-lg-13" id="projects-timeline">
@@ -498,25 +508,30 @@
                     </div>
                     <p class="fs-8 mb-7 mb-lg-8 text-center lh-lg">Certifications</p>
                     <div style="background-color: #ffffff; border: 1px solid #ccc; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-radius: 0.5rem; padding: 1.5rem;">
-                      <div class="d-flex justify-content-center align-items-center gap-2" style="flex-wrap: nowrap; overflow-x: auto;">
-                        <!-- Link and Image for Tableau Certificate -->
-                        <a href="https://www.credly.com/badges/cd6b3b9b-cb84-48a4-90f7-7e42bbf42a0d/linked_in_profile" target="_blank">
-                          <img src="assets/img/icons/Tableau_Certificate.png" alt="Tableau Certificate" style="flex: 1 0 auto; width: 50%;">
+                      <div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+                        <!-- Link, Image, and Caption for Tableau Certificate -->
+                        <a href="https://www.credly.com/badges/cd6b3b9b-cb84-48a4-90f7-7e42bbf42a0d/linked_in_profile" target="_blank" class="certificate-link">
+                          <img src="assets/img/icons/Tableau_Certificate.png" alt="Tableau Certificate" style="flex: 1 0 18%; max-width: 18%;">
+                          <span>Tableau Desktop Specialist</span>
                         </a>
-                        <!-- Link and Image for AWS Certificate -->
-                        <a href="https://www.credly.com/badges/4f21f720-29f9-4337-b7a3-665a4809c86c/linked_in_profile" target="_blank">
-                          <img src="assets/img/icons/AWS Certificate.png" alt="AWS Certificate" style="flex: 1 0 auto; width: 50%;">
+                        <!-- Link, Image, and Caption for AWS Certificate -->
+                        <a href="https://www.credly.com/badges/4f21f720-29f9-4337-b7a3-665a4809c86c/linked_in_profile" target="_blank" class="certificate-link">
+                          <img src="assets/img/icons/AWS Certificate.png" alt="AWS Certificate" style="flex: 1 0 18%; max-width: 18%;">
+                          <span>AWS Cloud Practitioner</span>
                         </a>
-                        <!-- Link and Image for Azure Certificate -->
-                        <a href="https://www.credly.com/badges/b38175e2-1160-42ba-ad00-86d140f3b0fc/linked_in_profile" target="_blank">
-                          <img src="assets/img/icons/Azure Certificate.png" alt="Azure Certificate" style="flex: 1 0 auto; width: 50%;">
+                        <!-- Link, Image, and Caption for Azure Certificate -->
+                        <a href="https://www.credly.com/badges/b38175e2-1160-42ba-ad00-86d140f3b0fc/linked_in_profile" target="_blank" class="certificate-link">
+                          <img src="assets/img/icons/Azure Certificate.png" alt="Azure Certificate" style="flex: 1 0 18%; max-width: 18%;">
+                          <span>Azure Fundamentals</span>
                         </a>
-                        <!-- Link and Image for SAS Certificate -->
-                        <a href="https://www.credly.com/badges/d6e11159-4be4-4551-a1cf-ac6b15b951b3/linked_in_profile" target="_blank">
-                          <img src="assets/img/icons/SAS Certificate.png" alt="SAS Certificate" style="flex: 1 0 auto; width: 50%;">
+                        <!-- Link, Image, and Caption for SAS Certificate -->
+                        <a href="https://www.credly.com/badges/d6e11159-4be4-4551-a1cf-ac6b15b951b3/linked_in_profile" target="_blank" class="certificate-link">
+                          <img src="assets/img/icons/SAS Certificate.png" alt="SAS Certificate" style="flex: 1 0 18%; max-width: 18%;">
+                          <span>Advanced Analytics</span>
                         </a>
                       </div>
                     </div>
+
                 </div>
             </div>
         </section>
