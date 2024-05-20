@@ -252,10 +252,7 @@
               background-color: #ffffff; /* Ensures the background is white */
           }
 
-          #skills h3 {
-              color: #000000; /* Black color for Skills heading */
-              font-size: 2rem; /* Heading size */
-          }
+ 
 
           #skills .fw-light {
               font-weight: 300; /* Lighter font weight for sub-text */
@@ -284,6 +281,32 @@
               gap: 10px; /* Space between logos */
           }
 
+          /* Ensuring uniform heading styles */
+          .fs-4, .fs-lg-3 {
+              font-size: 1.5rem; /* Adjust if needed to match exactly across sections */
+          }
+
+          .fw-bold {
+              font-weight: bold; /* Ensure boldness is consistent */
+          }
+
+          /* Skills section adjustments */
+          #skills h3 {
+              font-size: 1.5rem; /* This should match the .fs-4 or .fs-lg-3 class */
+              color: #000; /* Consistent color */
+          }
+
+          /* Correct sizing for certification icons */
+          #skills .certification-logo {
+              flex: 1 0 20%; /* Adjust to ensure appropriate sizing */
+              max-width: 20%; /* This should keep the icons larger and uniform */
+              margin: 10px; /* Optional: Adds spacing around each icon */
+          }
+
+          /* Glow effect on hover */
+          #skills .certification-logo:hover {
+              box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Adds a glow effect */
+          }
         </style>
 
 <section class="container special-background mb-8 mb-lg-13" id="projects-timeline">
@@ -469,9 +492,9 @@
         <section id="skills" style="background-color: #ffffff; padding: 20px 0;">
           <div class="row justify-content-center m-0"> <!-- Removed container classes and added margin 0 -->
               <div class="col-12 text-center">
-                  <h3 style="color: #000000; font-size: 2rem; margin-bottom: 1rem;">Skills</h3>
+                  <h3 class="fs-4 fs-lg-3 fw-bold text-center mb-2 mb-lg-1">Skills</h3>
                   <div style="background-color: #ffffff; border: 1px solid #ccc; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-radius: 0.5rem; padding: 1.5rem; margin-bottom: 30px;">
-                      <p style="font-size: 1.25rem; color: #333; margin-bottom: 1rem;">Languages and Tools & Technology</p>
+                      <p class="fs-8 mb-7 mb-lg-8 text-center lh-lg">Languages and Tools & Technology</p>
                       <div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
                           <!-- Image logos here with styling to ensure correct sizing -->
                           <img src="assets/img/icons/Python.png" alt="Python" style="flex: 1 0 18%; max-width: 18%;">
@@ -492,7 +515,7 @@
                       </div>
                   </div>
                   <div style="background-color: #ffffff; border: 1px solid #ccc; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-radius: 0.5rem; padding: 1.5rem; margin-bottom: 30px;">
-                      <p style="font-size: 1.25rem; color: #333; margin-bottom: 1rem;">Certifications</p>
+                      <p class="fs-8 mb-7 mb-lg-8 text-center lh-lg">Certifications</p>
                       <div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
                           <div style="flex: 1 0 18%; max-width: 18%; text-align: center;">
                               <a href="https://www.credly.com/badges/cd6b3b9b-cb84-48a4-90f7-7e42bbf42a0d/linked_in_profile">
