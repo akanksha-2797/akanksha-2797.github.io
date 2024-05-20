@@ -37,25 +37,37 @@
           .navbar-collapse {
               justify-content: center; /* Center the navbar items */
           }
-
+        
+          /* Initial transparent navbar style */
+          .navbar {
+              transition: background-color 0.5s ease; /* Smooth transition for background color */
+              background-color: transparent; /* Transparent initially */
+          }
+        
+          /* Opaque navbar style when scrolled */
+          .navbar.opaque {
+              background-color: #123a5b; /* Change to specified blue color when scrolled */
+          }
+        
           /* Style for normal navigation links */
           .nav-link {
               color: #aaa; /* Dim color for inactive state */
               transition: color 0.3s; /* Smooth transition for color change */
           }
-
+        
           /* Style for active navigation link */
           .nav-link.active {
               color: white; /* White color for active state */
-              font-weight: bold; /* Optional: makes active link bolder */
+              font-weight: bold; /* Makes active link bolder */
           }
-
+        
           /* Hover effect for navigation links */
           .nav-link:hover {
               color: white;
               text-decoration: none; /* Removes underline on hover */
           }
         </style>
+        
         <nav class="navbar navbar-expand-md fixed-top" id="navbar" data-navbar-soft-on-scroll="data-navbar-soft-on-scroll">
           <div class="container-fluid px-0">
               <button class="navbar-toggler border-0 pe-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
@@ -72,9 +84,9 @@
                   </ul>
               </div>
           </div>
-        </nav>      
-        <div data-bs-target="#navbar" data-bs-spy="scroll" tabindex="0">
-          <!-- Hero Section with Background Image -->
+      </nav>
+      <div data-bs-target="#navbar" data-bs-spy="scroll" tabindex="0">
+        <!-- Hero Section with Background Image -->
           <section class="hero-section overflow-hidden position-relative" id="home" style="background: url('assets/img/Hero/Portfolio Background.jpg') no-repeat center center; background-size: cover;">
             <div class="container h-100">
                 <div class="row h-100 align-items-center">
@@ -178,7 +190,7 @@
           .mb-4, .mb-8 { margin-bottom: 1.5rem; } /* mb-8 for larger bottom margin where necessary */
 
           .btn-custom {
-              background-color: #0056b3; /* Blue color */
+              background-color: #123a5b; /* Blue color */
               color: white;
               border-radius: 20px; /* Rounded corners */
               padding: 0.5rem 1rem; /* Adjust padding to control space around text */
@@ -505,39 +517,59 @@
         
       
           
-        
-        </div><button class="btn scroll-to-top text-white rounded-circle d-flex justify-content-center align-items-center bg-primary" data-scroll-top="data-scroll-top"><span class="uil uil-angle-up"></span></button>
-        <footer class="pt-2 pt-lg-2" id="footer" style="background-color: #0056b3;">
-          <div class="container">
-              <div class="row py-2">
-                  <div class="col-12 text-center">
-                      <h2 class="text-white mb-3">Contact Info</h2> <!-- Header added -->
-                  </div>
-              </div>
-              <div class="row gy-2 py-3 justify-content-center">
-                  <div class="col-12 text-center">
-                      <a class="icons fs-8 me-1 cursor-pointer text-white" target='_blank' href="tel:+17656949570">
-                          <span class="uil uil-phone"></span>
-                      </a>
-                      +1 (765)-694-9570
-                      <a class="icons fs-8 me-3 cursor-pointer text-white" target='_blank' href="mailto:roshanrajsingh0808@gmail.com">
-                          <span class="uil uil-envelope"></span>
-                      </a>
-                      
-                      <a class="icons fs-8 me-3 cursor-pointer text-white" target='_blank' href="https://www.linkedin.com/in/roshan-raj-singh-aug1992/">
-                          <span class="uil uil-linkedin"></span>
-                      </a>
-                      <a class="icons fs-8 me-3 cursor-pointer text-white" href="https://github.com/Roshan0808" target='_blank'>
-                          <span class="uil uil-github"></span>
-                      </a>
-                      
-                      <a class="icons fs-8 me-3 cursor-pointer text-white" href="assets/files/Roshan Resume.pdf" target='_blank'>
-                          <span class="uil uil-file"></span>
-                      </a>
-                  </div>
-              </div>
+        <div class="row py-2">
+          <div class="col-12 text-center">
+              <h2 class="text-black mb-1">Contact Info</h2> <!-- Header added -->
           </div>
-      </footer>
+      </div>
+        </div><button class="btn scroll-to-top text-white rounded-circle d-flex justify-content-center align-items-center bg-primary" data-scroll-top="data-scroll-top"><span class="uil uil-angle-up"></span></button>
+        <style>
+          /* Footer specific styles */
+          #footer {
+              background-color: #123a5b; /* Dark blue background */
+              color: #FFFFFF; /* White text color for better visibility */
+          }
+          
+          #footer a, #footer a.icons { /* Ensures all links and icons in the footer are white */
+              color: #FFFFFF; /* White color for all links */
+              text-decoration: none; /* No underline */
+          }
+          
+          #footer a:hover { /* Hover effect for links */
+              color: #CCCCCC; /* Light grey for hover state */
+          }
+          
+          .icons span { /* Specific styles for icons using the 'span' inside 'a.icons' */
+              color: inherit; /* Inherits color from parent which is white set above */
+          }
+      </style>
+      
+      <footer class="pt-2 pt-lg-2" id="footer">
+        <div class="container">
+            <div class="row gy-2 py-3 justify-content-center">
+                <div class="col-12 text-center">
+                    <a class="icons fs-8 me-1 cursor-pointer" target='_blank' href="tel:+17656949570">
+                        <span class="uil uil-phone"></span>
+                    </a>
+                    +1 (765)-694-9570
+                    <a class="icons fs-8 me-3 cursor-pointer" target='_blank' href="mailto:roshanrajsingh0808@gmail.com">
+                        <span class="uil uil-envelope"></span>
+                    </a>
+                    roshanrajsingh0808@gmail.com
+                    <a class="icons fs-8 me-3 cursor-pointer" target='_blank' href="https://www.linkedin.com/in/roshan-raj-singh-aug1992/">
+                        <span class="uil uil-linkedin"></span>
+                    </a>
+                    <a class="icons fs-8 me-3 cursor-pointer" href="https://github.com/Roshan0808" target='_blank'>
+                        <span class="uil uil-github"></span>
+                    </a>
+                    <a class="icons fs-8 me-3 cursor-pointer" href="assets/files/Roshan Resume.pdf" target='_blank'>
+                        <span class="uil uil-file"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
       
       
     </main><!-- ===============================================--><!--    End of Main Content--><!-- ===============================================-->
@@ -553,6 +585,18 @@
     <script src="vendors/lodash/lodash.min.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
     <script src="assets/js/theme.js"></script>
+
+    <script>
+      window.addEventListener('scroll', function() {
+          var navbar = document.getElementById('navbar');
+          if (window.pageYOffset > 100) {  // Adjust 100 to the height at which you want the transition to occur
+              navbar.classList.add('opaque');
+          } else {
+              navbar.classList.remove('opaque');
+          }
+      });
+      </script>
+      
   </body>
 
 </html>
