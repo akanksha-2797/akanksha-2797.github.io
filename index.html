@@ -261,46 +261,30 @@
           #skills p {
               font-size: 1.25rem; /* Sub-heading size */
               color: #333; /* Dark grey for text */
-          }
-
-          #skills .rounded-2 {
-              border-radius: 0.5rem; /* Rounded corners for boxes */
-          }
-
-          #skills .shadow-sm {
-              box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-          }
-
-          #skills img {
-              flex: 0 0 18%; /* Ensures 5 logos per row */
-              max-width: 18%; /* Adjusts max width to ensure even distribution */
-              height: auto; /* Maintain aspect ratio */
-              margin-bottom: 10px; /* Space between rows */
-          }
-
-          #skills .certification-logo {
-              flex: 1 0 10%; /* Decrease to make icons take more horizontal space if needed */
-              max-width: 20%; /* Adjust to fit 5 items per row if possible */
-              text-align: center; /* Keeps the text aligned to the center below the icons */
-              padding: 2px; /* Adds padding inside each logo container */
-              box-sizing: border-box; /* Includes padding and border in the element's total width and height */
-          }
-
-          #skills .certification-logo img {
-              width: 100%; /* Maintains the width as per the parent container's adjusted width */
-              height: 150px; /* Adjust this value to control the display size of the icons */
-              object-fit: contain; /* Ensures the image is scaled correctly within its aspect ratio */
+              text-align: center; /* Centers the text */
           }
 
           #skills .d-flex {
-              justify-content: space-around; /* Adjusts spacing to distribute items evenly */
-              flex-wrap: wrap; /* Allows items to wrap onto the next line */
+              display: flex;
+              flex-wrap: wrap; /* Allows items to wrap to the next line */
+              justify-content: center; /* Center align logos */
+              gap: 10px; /* Space between logos */
           }
-          
-          #skills .certification-logo img:hover {
-              transform: scale(1.05); /* Slightly enlarges the logo on hover */
-              box-shadow: 0 0 10px rgba(254, 217, 217, 0.7); /* White glow effect on hover */
+
+          #skills img {
+              flex: 1 0 20%; /* Ensures no more than 5 logos per row */
+              max-width: 20%; /* Adjusts max width to ensure even distribution */
+              height: 150px; /* Set a fixed height to control size */
+              margin-bottom: 10px; /* Space between rows */
+              transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+              box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* Adds a subtle shadow */
           }
+
+          #skills img:hover {
+              transform: scale(1.1); /* Enlarges the icon on hover */
+              box-shadow: 0 0 15px rgba(255,255,255,0.8); /* Adds a glow effect on hover */
+          }
+
         </style>
 
 <section class="container special-background mb-8 mb-lg-13" id="projects-timeline">
@@ -486,59 +470,45 @@
           <section id="skills" style="background-color: #ffffff; padding: 20px 0;">
             <div class="row justify-content-center m-0">
                 <div class="col-12 text-center">
-                    <h3 class="fs-4 fs-lg-3 fw-bold text-center mb-2 mb-lg-1">Skills</h3>
-                    <p class="fs-8 mb-7 mb-lg-8 text-center lh-lg">Languages and Tools & Technology</p>
-                    <div style="background-color: #ffffff; border: 1px solid #ccc; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-radius: 0.5rem; padding: 1.5rem; margin-bottom: 30px;">
-                        
-                        <div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
-                            <img src="assets/img/icons/Python.png" alt="Python" style="flex: 1 0 18%; max-width: 18%;">
-                            <img src="assets/img/icons/SQL.png" alt="SQL" style="flex: 1 0 18%; max-width: 18%;">
-                            <img src="assets/img/icons/R.png" alt="R" style="flex: 1 0 18%; max-width: 18%;">
-                            <img src="assets/img/icons/Tableau.png" alt="Tableau" style="flex: 1 0 18%; max-width: 18%;">
-                            <img src="assets/img/icons/Power BI.png" alt="Power BI" style="flex: 1 0 18%; max-width: 18%;">
-                            <img src="assets/img/icons/Google_Cloud_Platform.png" alt="Google Cloud Platform" style="flex: 1 0 18%; max-width: 18%;">
-                            <img src="assets/img/icons/Hadoop.png" alt="Hadoop" style="flex: 1 0 18%; max-width: 18%;">
-                            <img src="assets/img/icons/SAS.png" alt="SAS" style="flex: 1 0 18%; max-width: 18%;">
-                            <img src="assets/img/icons/AWS.png" alt="AWS" style="flex: 1 0 18%; max-width: 18%;">
-                            <img src="assets/img/icons/Excel.png" alt="MS Excel" style="flex: 1 0 18%; max-width: 18%;">
-                            <img src="assets/img/icons/Risk.png" alt="@Risk" style="flex: 1 0 18%; max-width: 18%;">
-                            <img src="assets/img/icons/Minitab.png" alt="Minitab" style="flex: 1 0 18%; max-width: 18%;">
-                            <img src="assets/img/icons/Machine Learning.png" alt="Machine Learning" style="flex: 1 0 18%; max-width: 18%;">
-                            <img src="assets/img/icons/Deep Learning.png" alt="Deep Learning" style="flex: 1 0 18%; max-width: 18%;">
-                        </div>
+                    <h3 style="font-size: 2rem; font-weight: bold; color: #000; margin-bottom: 2rem;">Skills</h3>
+                    <p style="font-size: 1.25rem; color: #333; margin-bottom: 1rem;">Languages and Tools & Technology</p>
+                    <div class="d-flex flex-wrap justify-content-center align-items-center gap-2" style="margin-bottom: 30px;">
+                        <!-- Image logos here -->
+                        <img src="assets/img/icons/Python.png" alt="Python">
+                        <!-- More icons -->
+                        <img src="assets/img/icons/SQL.png" alt="SQL">
+                        <img src="assets/img/icons/R.png" alt="R">
+                        <img src="assets/img/icons/Tableau.png" alt="Tableau">
+                        <img src="assets/img/icons/Power BI.png" alt="Power BI">
+                        <img src="assets/img/icons/Google_Cloud_Platform.png" alt="Google Cloud Platform">
+                        <img src="assets/img/icons/Hadoop.png" alt="Hadoop">
+                        <img src="assets/img/icons/SAS.png" alt="SAS">
+                        <img src="assets/img/icons/AWS.png" alt="AWS">
+                        <img src="assets/img/icons/Excel.png" alt="MS Excel">
+                        <img src="assets/img/icons/Risk.png" alt="@Risk">
+                        <img src="assets/img/icons/Minitab.png" alt="Minitab">
+                        <img src="assets/img/icons/Machine Learning.png" alt="Machine Learning">
+                        <img src="assets/img/icons/Deep Learning.png" alt="Deep Learning">
                     </div>
-                    <p class="fs-8 mb-7 mb-lg-8 text-center lh-lg">Certifications</p>
-                    <div style="background-color: #ffffff; border: 1px solid #ccc; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-radius: 0.5rem; padding: 1.5rem; margin-bottom: 30px;">
-                        <div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
-                            <div class="certification-logo">
-                                <a href="https://www.credly.com/badges/cd6b3b9b-cb84-48a4-90f7-7e42bbf42a0d/linked_in_profile">
-                                    <img src="assets/img/icons/Tableau_Certificate.png" alt="Tableau Certificate" style="width: 100%;">
-                                </a>
-                                <!--p>Tableau Desktop Specialist</p-->
-                            </div>
-                            <div class="certification-logo">
-                                <a href="https://www.credly.com/badges/4f21f720-29f9-4337-b7a3-665a4809c86c/linked_in_profile">
-                                    <img src="assets/img/icons/AWS Certificate.png" alt="AWS Certificate" style="width: 100%;">
-                                </a>
-                                <!--p>AWS Certified Cloud Practitioner</p-->
-                            </div>
-                            <div class="certification-logo">
-                                <a href="https://www.credly.com/badges/b38175e2-1160-42ba-ad00-86d140f3b0fc/linked_in_profile">
-                                    <img src="assets/img/icons/Azure Certificate.png" alt="Azure Certificate" style="width: 100%;">
-                                </a>
-                                <!--p>Microsoft Certified: Azure Fundamentals</p-->
-                            </div>
-                            <div class="certification-logo">
-                                <a href="https://www.credly.com/badges/d6e11159-4be4-4551-a1cf-ac6b15b951b3/linked_in_profile">
-                                    <img src="assets/img/icons/SAS Certificate.png" alt="SAS Certificate" style="width: 100%;">
-                                </a>
-                                <!--p>Operations Research with SAS Optimization</p-->
-                            </div>
-                        </div>
+                    <p style="font-size: 1.25rem; color: #333; margin-bottom: 1rem;">Certifications</p>
+                    <div class="d-flex flex-wrap justify-content-center align-items-center gap-2" style="margin-bottom: 30px;">
+                        <a href="https://www.credly.com/badges/cd6b3b9b-cb84-48a4-90f7-7e42bbf42a0d/linked_in_profile">
+                            <img src="assets/img/icons/Tableau_Certificate.png" alt="Tableau Certificate">
+                        </a>
+                        <!-- More certification links and images -->
+                        <a href="https://www.credly.com/badges/4f21f720-29f9-4337-b7a3-665a4809c86c/linked_in_profile">
+                            <img src="assets/img/icons/AWS Certificate.png" alt="AWS Certificate" style="width: 100%;">
+                        </a>
+                        <a href="https://www.credly.com/badges/b38175e2-1160-42ba-ad00-86d140f3b0fc/linked_in_profile">
+                            <img src="assets/img/icons/Azure Certificate.png" alt="Azure Certificate" style="width: 100%;">
+                        </a>
+                        <a href="https://www.credly.com/badges/d6e11159-4be4-4551-a1cf-ac6b15b951b3/linked_in_profile">
+                            <img src="assets/img/icons/SAS Certificate.png" alt="SAS Certificate" style="width: 100%;">
+                        </a>
                     </div>
                 </div>
             </div>
-        </section>
+        </section>          
         
       
           
