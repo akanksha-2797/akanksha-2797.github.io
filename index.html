@@ -188,7 +188,10 @@
           }
       
           .fs-8 { font-size: 1rem; }
-          .fs-4, .fs-lg-5 { font-size: 1.25rem; }
+          .fs-4, .fs-lg-5 { 
+              font-size: 1.25rem; 
+              margin-bottom: 10px; /* Reduced space below the project title */
+          }
           .fw-bold { font-weight: bold; }
           .lh-lg { line-height: 1.5; }
           .mb-4, .mb-8 { margin-bottom: 1.5rem; } /* mb-8 for larger bottom margin where necessary */
@@ -202,6 +205,7 @@
               border: none;
               transition: all 0.3s; /* Smooth transition for hover effects */
               font-weight: 400;
+              margin-top: 10px; /* Ensures spacing above the button is consistent */
           }
       
           .btn-custom:hover, .btn-custom:focus {
@@ -211,7 +215,7 @@
               text-decoration: none;
           }
       
-          /* New styles for center alignment */
+          /* Center alignment adjustments */
           .project-section .col-md-6 {
               display: flex;
               flex-direction: column;
@@ -224,23 +228,15 @@
               width: 100%; /* Ensures images scale correctly within the column */
               max-width: 100%; /* Prevents images from stretching beyond their maximum width */
               height: auto; /* Keeps image aspect ratio */
+              margin-bottom: 10px; /* Reduces space below images */
           }
-
-          .project-section .fs-4, .fs-lg-5 {
-              font-size: 1.25rem;
-              margin-bottom: 0.5rem; /* Reduces the space below the project title */
-          }
-
-          .project-section .fs-8 {
-              font-size: 1rem;
-              margin-top: 0; /* Removes top margin from the date, reducing the space */
-          }
-
-          .project-section .col-md-6 p {
-              margin-top: 0.5rem; /* Adjusts top margin for the paragraphs to be closer to the date */
-              margin-bottom: 0.5rem; /* Standardizes bottom margin for consistency */
+      
+          .project-section .col-md-6 p, .project-section .col-md-6 .fs-8 {
+              margin-top: 5px; /* Reduces space above paragraphs and date */
+              margin-bottom: 5px; /* Standardizes bottom margin for paragraphs */
           }
       </style>
+      
       
       
 
