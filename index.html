@@ -179,21 +179,20 @@
         
         <style>
           .project-section {
-            margin-bottom: 4rem; /* Adds more space below each section */
-            border-bottom: 2px solid #f0f0f0; /* Adds a subtle white line for separation */
-            padding-bottom: 20px; /* Adds padding below each project for better spacing */
+              margin-bottom: 4rem; /* Adds more space below each section */
+              border-bottom: 2px solid #f0f0f0; /* Adds a subtle white line for separation */
+              padding-bottom: 20px; /* Adds padding below each project for better spacing */
           }
-
-          .project-section > div:last-child {
-            border-bottom: none; /* Removes the border from the last timeline entry */
+          .project-section:last-child {
+              border-bottom: none; /* Removes the border from the last project section */
           }
-          
+      
           .fs-8 { font-size: 1rem; }
           .fs-4, .fs-lg-5 { font-size: 1.25rem; }
           .fw-bold { font-weight: bold; }
           .lh-lg { line-height: 1.5; }
           .mb-4, .mb-8 { margin-bottom: 1.5rem; } /* mb-8 for larger bottom margin where necessary */
-
+      
           .btn-custom {
               background-color: #123a5b; /* Blue color */
               color: white;
@@ -204,15 +203,27 @@
               transition: all 0.3s; /* Smooth transition for hover effects */
               font-weight: 400;
           }
-
+      
           .btn-custom:hover, .btn-custom:focus {
               background-color: #447bb6; /* Darker shade of blue on hover */
               box-shadow: 0 0 15px rgba(0, 251, 255, 0.5); /* Glowing effect */
               color: white;
               text-decoration: none;
           }
-
-        </style>
+      
+          /* Flexbox settings to align project sections side by side */
+          .project-row {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-between; /* Adjusts spacing between each project */
+          }
+      
+          .project-item {
+              flex: 1 1 45%; /* Each project item will take up roughly 45% of the row, adjust this value based on your layout needs */
+              margin-bottom: 30px; /* Maintains a bottom margin for spacing */
+          }
+      </style>
+      
 
         <style>
           .timeline {
@@ -307,18 +318,19 @@
         </style>
 
 <section class="container special-background mb-8 mb-lg-13" id="projects-timeline">
-        <section class="container mb-8 mb-lg-13 pink-background" id="projects">
-            <!-- project 1 final starts here-->  
-             <div class="col-md-12 col-lg-12 pb-2">
-                <h3 class="fs-4 fs-lg-3 fw-bold text-center mb-2 mb-lg-x1">Academic Projects</h3>
-              </div>  
-            
-            <!-- project 1 final starts here-->  
-              <div style="background-color: #ffffff; border: 1px solid #ccc; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-radius: 0.5rem; padding: 1.5rem; margin-bottom: 30px;">
-                <div class="row align-items-center project-section">
+  <section class="container mb-8 mb-lg-13 pink-background" id="projects">
+      <div class="col-md-12 col-lg-12 pb-2">
+          <h3 class="fs-4 fs-lg-3 fw-bold text-center mb-2 mb-lg-x1">Academic Projects</h3>
+      </div>  
+
+      <!-- Flexbox container for projects -->
+      <div class="project-row">
+          <!-- project 1 -->
+          <div class="project-item">
+              <div class="project-section">
                   <div class="col-12 text-center mb-4">
                       <h2 class="fs-4 fs-lg-5 fw-bold">Optimizing Inventory with Stockout Risk Modeling & BI Driven Real-Time Dashboard for Supplier Performance</h2>
-                      <h5 class="fs-8 fw-bold lh-lg">April 2024</h5>
+                      <p class="fs-8 mb-7 mb-lg-8 text-center lh-lg">April 2024</p>
                       <img class="img-fluid" src="assets/img/projects/supply_chain_AI.png" alt="Supply Chain AI">
                   </div>
                   <div class="col-12">
@@ -326,102 +338,39 @@
                       <p class="text-center">
                           We developed a dashboard for a leading welding equipment manufacturer that consolidated multiple KPIs, enhancing delivery performance by 40% and eliminating reporting latency in their supply chain. Simultaneously, we implemented a regression model that accurately forecasted supplier risk scores and the likelihood of material stockouts, achieving an R-squared value of 98.7%
                       </p>
-                      
                       <div class="text-center">
                           <a class="btn btn-custom btn-lg" href="assets/files/Real Time Delivery Trend Performance_Final.pdf" target="_blank">View</a>
                       </div>
                   </div>
-                </div>
-  
-              <!-- project 1 final ends here-->  
-                
-              <!-- project 2 final starts here-->  
-                <div class="row align-items-center project-section"> <!-- Added class project-section -->
+              </div>
+          </div>
+          
+          <!-- project 2 -->
+          <div class="project-item">
+              <div class="project-section">
                   <div class="col-12 text-center mb-4">
-                    <h2 class="fs-4 fs-lg-5 fw-bold">Unveiling the Future: Forecasting Cryptocurrency Trends</h2>
-                    <h5 class="fs-8 fw-bold lh-lg">February 2024</h5>
-                    <img class="img-fluid" src="assets/img/projects/Crypto.jpg" alt="Crypto Market">
+                      <h2 class="fs-4 fs-lg-5 fw-bold">Unveiling the Future: Forecasting Cryptocurrency Trends</h2>
+                      <p class="fs-8 mb-7 mb-lg-8 text-center lh-lg">February 2024</p>
+                      <img class="img-fluid" src="assets/img/projects/Crypto.jpg" alt="Crypto Market">
                   </div>
                   <div class="col-12">
-                    <h5 class="fs-8 fw-bold lh-lg text-center">About Project</h5>
-                    <p class="text-center">
-                      We developed an LSTM model employing advanced algorithms and a rolling window training approach to predict cryptocurrency prices, achieving an RMSE below 0.12, which indicated remarkable accuracy across various cryptocurrencies in the volatile market. Additionally, we compared this model's forecasting performance with that of XGBoost, a traditional tree-based model, to validate our approach.
-                    </p>
-                    <div class="text-center">
-                      <a class="btn btn-custom btn-lg" href="assets/files/Unveiling the Future - Forecasting Cryptocurrency Trends.pdf" target="_blank">View</a>
-                    </div>
-                  </div>
-                </div>
-              <!-- project 2 final ends here-->
-  
-                
-   
-              <!-- project 3 starts here-->  
-  
-              <div class="row align-items-center project-section"> <!-- Added class project-section -->
-                  <div class="col-12 text-center mb-4">
-                    <h2 class="fs-4 fs-lg-5 fw-bold">Predicting Tiket Sales to Identify High Value Spectators for NCAA</h2>
-                    <h5 class="fs-8 fw-bold lh-lg">February 2024</h5>
-                    <img class="img-fluid" src="assets/img/projects/NCAA.jpg" alt="NCAA">
-                  </div>
-                  <div class="col-12">
-                    <h5 class="fs-8 fw-bold lh-lg text-center">About Project</h5>
-                    <p class="text-center">
-                      We spearheaded the development of a classification model for the NCAA's Cross Roads Classic competition to identify ticket-buying customers. By analyzing past data and utilizing predictive models, our team achieved an accuracy of over 98%. Additionally, the F1 score also reached 98%, indicating that our model was both balanced and highly effective. This model enables the NCAA to efficiently identify and market their events to potential ticket buyers, enhancing both the student-athletes’ experience and the financial viability of the championships.
-                    </p>
-                    <div class="text-center">
-                      <a class="btn btn-custom btn-lg" href="assets/files/NCAA Predicting High Value Customers.twbx" target="_blank">View</a>
-                    </div>
+                      <h5 class="fs-8 fw-bold lh-lg text-center">About Project</h5>
+                      <p class="text-center">
+                          We developed an LSTM model employing advanced algorithms and a rolling window training approach to predict cryptocurrency prices, achieving an RMSE below 0.12, which indicated remarkable accuracy across various cryptocurrencies in the volatile market. Additionally, we compared this model's forecasting performance with that of XGBoost, a traditional tree-based model, to validate our approach.
+                      </p>
+                      <div class="text-center">
+                          <a class="btn btn-custom btn-lg" href="assets/files/Unveiling the Future - Forecasting Cryptocurrency Trends.pdf" target="_blank">View</a>
+                      </div>
                   </div>
               </div>
-  
-              <!-- project 3 ends here-->  
-  
-  
-              <!-- project 4 starts here-->  
-             
-              <div class="row align-items-center project-section"> <!-- Added class project-section -->
-                  <div class="col-12 text-center mb-4">
-                    <h2 class="fs-4 fs-lg-5 fw-bold">Airbnb Superhost Curn Prediction</h2>
-                    <h5 class="fs-8 fw-bold lh-lg">December 2023</h5>
-                    <img class="img-fluid" src="assets/img/projects/Airbnb.jpg" alt="Airbnb">
-                  </div>
-                  <div class="col-12">
-                    <h5 class="fs-8 fw-bold lh-lg text-center">About Project</h5>
-                    <p class="text-center">
-                      We harnessed advanced data analytics and AI to develop a predictive model for Airbnb's 'Superhost' status, achieving 84% accuracy and 82% sensitivity. This high-performing model was pivotal in identifying critical retention factors, enabling us to provide Airbnb with actionable insights to mitigate host attrition effectively. By understanding which factors most influence Superhost churn, our team provided targeted recommendations to help maintain the Superhost community, crucial for Airbnb's reputation and operational success.
-                    </p>
-                    <div class="text-center">
-                      <a class="btn btn-custom btn-lg" href="assets/files/Airbnb Superhost Churn Prediction.pdf" target="_blank">View</a>
-                    </div>
-                  </div>
-              </div>
-  
-              <!-- project 4 ends here-->  
-  
-              <!-- project 5 starts here-->  
-  
-              <div class="row align-items-center project-section"> <!-- Added class project-section -->
-                  <div class="col-12 text-center mb-4">
-                    <h2 class="fs-4 fs-lg-5 fw-bold">Firm Bankruptcy Prediction Presentation</h2>
-                    <h5 class="fs-8 fw-bold lh-lg">November 2023</h5>
-                    <img class="img-fluid" src="assets/img/projects/Bankruptcy.jpg" alt="Bankruptcy">
-                  </div>
-                  <div class="col-12">
-                    <h5 class="fs-8 fw-bold lh-lg text-center">About Project</h5>
-                    <p class="text-center">
-                      I implemented data mining algorithms in SAS Enterprise Miner to predict firm bankruptcy with over 91% accuracy. My project involved analyzing a complex dataset of 10,000 records and addressing challenges like missing data and outliers. I compared over eight different models to identify the most effective approach, significantly enhancing model accuracy through strategic model selection and sophisticated preprocessing techniques.
-                    </p>
-                    <div class="text-center">
-                      <a class="btn btn-custom btn-lg" href="assets/files/Firm Bankruptcy Prediction Presentation.pdf" target="_blank">View</a>
-                    </div>
-                  </div>
-              </div>
-  
-              <!-- project 5 ends here-->
-              </div>
-                
-          </section>
+          </div>
+
+          <!-- Additional projects can be added in the same pattern -->
+
+      </div> <!-- Closing tag for project-row -->
+  </section>
+</section>
+
 
           <section class="container mb-8 mb-lg-11" id="experience">
               <div class="row justify-content-center">
