@@ -211,18 +211,22 @@
               text-decoration: none;
           }
       
-          /* Flexbox settings to align project sections side by side */
-          .project-row {
+          /* New styles for center alignment */
+          .project-section .col-md-6 {
               display: flex;
-              flex-wrap: wrap;
-              justify-content: space-between; /* Adjusts spacing between each project */
+              flex-direction: column;
+              justify-content: center; /* Centers content vertically */
+              align-items: center; /* Centers content horizontally */
+              text-align: center; /* Aligns text centrally */
           }
       
-          .project-item {
-              flex: 1 1 45%; /* Each project item will take up roughly 45% of the row, adjust this value based on your layout needs */
-              margin-bottom: 30px; /* Maintains a bottom margin for spacing */
+          .project-section .col-md-6 img {
+              width: 100%; /* Ensures images scale correctly within the column */
+              max-width: 100%; /* Prevents images from stretching beyond their maximum width */
+              height: auto; /* Keeps image aspect ratio */
           }
       </style>
+      
       
 
         <style>
