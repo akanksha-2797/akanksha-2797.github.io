@@ -327,56 +327,56 @@
 
 <style>
   #skills {
-      background-color: #ffffff; /* Ensures the background is white */
-      margin-bottom: 10px;
-  }
+        background-color: #ffffff; /* Ensures the background is white */
+    }
 
-  #skills h3 {
-      color: #000000; /* Black color for Skills heading */
-      font-size: 2rem; /* Heading size */
-  }
+    #skills h3 {
+        color: #000000; /* Black color for Skills heading */
+        font-size: 2rem; /* Heading size */
+    }
 
-  #skills .fw-light {
-      font-weight: 300; /* Lighter font weight for sub-text */
-      font-size: 1.25rem; /* Sub-heading size */
-      color: #333; /* Dark grey color for visibility */
-  }
+    #skills .fw-light {
+        font-weight: 300; /* Lighter font weight for sub-text */
+        font-size: 1.25rem; /* Sub-heading size */
+        color: #333; /* Dark grey color for visibility */
+    }
 
-  #skills .rounded-2 {
-      border-radius: 0.5rem; /* Rounded corners */
-  }
+    #skills .rounded-2 {
+        border-radius: 0.5rem; /* Rounded corners */
+    }
 
-  #skills .shadow-sm {
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-  }
+    #skills .shadow-sm {
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    }
 
-  #skills .credential {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      flex: 1 0 50%; /* Adjusted to give more space per item */
-      max-width: 50%; /* Matches flex basis */
-      margin: 10px; /* Added space around each credential for better separation */
-  }
+    #skills img {
+        flex: 0 0 18%; /* Ensures 5 logos per row */
+        max-width: 18%; /* Adjusts max width to ensure even distribution */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 10px; /* Space between rows */
+    }
 
-  #skills .credential img {
-      width: 50%; /* Adjust to a fixed percentage of the container width */
-      height: auto; /* Maintain aspect ratio */
-  }
+    #skills .d-flex {
+        flex-wrap: wrap; /* Allows logos to wrap to next line */
+        justify-content: center; /* Center align logos */
+        gap: 10px; /* Space between logos */
+    }
 
-  #skills .credential a {
-      display: block;
-      text-align: center;
-      color: #007bff; /* Change the color as per your theme */
-      text-decoration: none; /* No underline for links */
-      margin-top: 10px; /* Adjust spacing between the image and the link */
+    #skills {
+    margin-bottom: 10px;
   }
+</style>
 
-  #skills .d-flex {
-      flex-wrap: wrap; /* Allows logos to wrap to next line */
-      justify-content: space-around; /* Adjust alignment to space-around for even spacing */
-      gap: 10px; /* Space between logos */
-  }
+<style>
+  h3 {
+    font-size: 1.75rem; /* Sets a uniform font size */
+    font-weight: bold; /* Makes the header text bold */
+    text-align: center; /* Centers the text */
+    color: #123456; /* Specify the text color you want */
+    margin-top: 20px; /* Adds space above the header */
+    margin-bottom: 10px; /* Adds space below the header */
+}
+
 </style>
 
 
@@ -384,7 +384,7 @@
 <section class="container special-background mb-8 mb-lg-13" id="projects-timeline">
   <section class="container mb-8 mb-lg-13 pink-background" id="projects">
       <div class="col-md-12 col-lg-12 pb-2" style="padding-top: 50px;">
-          <h3 class="fs-4 fs-lg-3 fw-bold text-center mb-2 mb-lg-x1">Academic Projects</h3>
+          <h3>Academic Projects</h3>
       </div>
     <div class="container section-container">
       <!-- Project 1 -->
@@ -470,7 +470,7 @@
           <section class="container mb-8 mb-lg-11" id="experience">
               <div class="row justify-content-center">
                   <div class="col-md-8 col-lg-7">
-                      <h3 class="fs-4 fs-lg-3 fw-bold text-center mb-2 mb-lg-1">Professional Experience</h3>
+                      <h3>Professional Experience</h3>
                       <p class="fs-8 mb-7 mb-lg-8 text-center lh-lg">Data Science professional with over 5 years of experience in diverse industries and a Master's in Business Analytics, seeking roles to drive impactful outcomes.</p>
                   </div>
                   <div class="container section-container">
@@ -538,7 +538,7 @@
           <section id="skills" style="background-color: #ffffff; padding: 20px 0;">
             <div class="row justify-content-center m-0">
                 <div class="col-12 text-center">
-                    <h3 class="fs-4 fs-lg-3 fw-bold text-center mb-2 mb-lg-1">Skills</h3>
+                    <h3>Skills</h3>
                     <p class="fs-8 mb-7 mb-lg-8 text-center lh-lg">Languages and Tools & Technology</p>
                     <div class="container section-container">
                         
@@ -559,25 +559,14 @@
                             <img src="assets/img/icons/Deep Learning.png" alt="Deep Learning" style="flex: 1 0 18%; max-width: 18%;">
                         </div>
                     </div>
-                    <p class="fs-8 mb-7 mb-lg-8 text-center lh-lg">Certifications</p>
+                    <p style="font-size: 1.25rem; margin-top: 30px; margin-bottom: 20px; text-align: center; line-height: 1.5;" class="mb-7 mb-lg-8">Certifications</p>
                     <div class="container section-container">
                       <div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
-                          <div class="credential">
-                              <img src="assets/img/icons/Tableau_Certificate.png" alt="Tableau Certificate" style="flex: 1 0 18%; max-width: 18%;">
-                              <a href="https://www.credly.com/badges/cd6b3b9b-cb84-48a4-90f7-7e42bbf42a0d/linked_in_profile">View Credential</a>
-                          </div>
-                          <div class="credential">
-                              <img src="assets/img/icons/AWS Certificate.png" alt="AWS Certificate" style="flex: 1 0 18%; max-width: 18%;">
-                              <a href="https://www.credly.com/badges/4f21f720-29f9-4337-b7a3-665a4809c86c/linked_in_profile">View Credential</a>
-                          </div>
-                          <div class="credential">
-                              <img src="assets/img/icons/Azure Certificate.png" alt="Azure Certificate" style="flex: 1 0 18%; max-width: 18%;">
-                              <a href="https://www.credly.com/badges/b38175e2-1160-42ba-ad00-86d140f3b0fc/linked_in_profile">View Credential</a>
-                          </div>
-                          <div class="credential">
-                              <img src="assets/img/icons/SAS Certificate.png" alt="SAS Certificate" style="flex: 1 0 18%; max-width: 18%;">
-                              <a href="https://www.credly.com/badges/d6e11159-4be4-4551-a1cf-ac6b15b951b3/linked_in_profile">View Credential</a>
-                          </div>
+                          <!-- Image logos here with styling to ensure correct sizing -->
+                          <img src="assets/img/icons/Tableau_Certificate.png" alt="Tableau Certificate" href="https://www.credly.com/badges/cd6b3b9b-cb84-48a4-90f7-7e42bbf42a0d/linked_in_profile" style="flex: 1 0 18%; max-width: 18%;">
+                          <img src="assets/img/icons/AWS Certificate.png" alt="AWS Certificate" href="https://www.credly.com/badges/4f21f720-29f9-4337-b7a3-665a4809c86c/linked_in_profile" style="flex: 1 0 18%; max-width: 18%;">
+                          <img src="assets/img/icons/Azure Certificate.png" alt="Azure Certificate" href="https://www.credly.com/badges/b38175e2-1160-42ba-ad00-86d140f3b0fc/linked_in_profile" style="flex: 1 0 18%; max-width: 18%;">
+                          <img src="assets/img/icons/SAS Certificate.png" alt="SAS Certificate" href="https://www.credly.com/badges/d6e11159-4be4-4551-a1cf-ac6b15b951b3/linked_in_profile" style="flex: 1 0 18%; max-width: 18%;">
                       </div>
                   </div>                  
                 </div>
