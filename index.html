@@ -354,14 +354,14 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      flex: 1 0 18%;
-      max-width: 18%;
+      flex: 1 0 22%; /* Adjusted to give more space per item */
+      max-width: 22%; /* Matches flex basis */
+      margin: 10px; /* Added space around each credential for better separation */
   }
 
   #skills .credential img {
-      width: 100%; /* This ensures the image uses the full width of the container */
-      height: auto; /* Maintains the aspect ratio of the image */
-      margin-bottom: 5px; /* Space between the image and the link */
+      width: 80%; /* Adjust to a fixed percentage of the container width */
+      height: auto; /* Maintain aspect ratio */
   }
 
   #skills .credential a {
@@ -369,15 +369,16 @@
       text-align: center;
       color: #007bff; /* Change the color as per your theme */
       text-decoration: none; /* No underline for links */
-      margin-top: 5px; /* Adjust spacing between the image and the link */
+      margin-top: 10px; /* Adjust spacing between the image and the link */
   }
 
   #skills .d-flex {
       flex-wrap: wrap; /* Allows logos to wrap to next line */
-      justify-content: center; /* Center align logos */
+      justify-content: space-around; /* Adjust alignment to space-around for even spacing */
       gap: 10px; /* Space between logos */
   }
 </style>
+
 
 
 <section class="container special-background mb-8 mb-lg-13" id="projects-timeline">
