@@ -67,7 +67,24 @@
               color: white;
               text-decoration: none; /* Removes underline on hover */
           }
+        
+          /* Media query for devices with a max width of 768px */
+          @media only screen and (max-width: 768px) {
+              #navbar .navbar {
+                  background-color: #123a5b; /* Always opaque on mobile for better visibility */
+              }
+              #navbar .navbar-collapse {
+                  flex-direction: column; /* Stack navbar items vertically on smaller screens */
+              }
+              #navbar .nav-link, #navbar .navbar-toggler {
+                  padding: 10px 15px; /* Larger touch areas for easier interaction */
+              }
+              #navbar .navbar-toggler {
+                  margin-bottom: 10px; /* Space between menu toggle and nav items */
+              }
+          }
         </style>
+        
         
         <nav class="navbar navbar-expand-md fixed-top" id="navbar" data-navbar-soft-on-scroll="data-navbar-soft-on-scroll">
           <div class="container-fluid px-0">
@@ -130,35 +147,35 @@
             background: url('assets/img/Hero/Portfolio Background.jpg') no-repeat center center;
             background-size: cover;
           }
-
+        
           .container.h-100 {
             height: 100%;
           }
-
+        
           .row.h-100 {
             height: 100%;
             align-items: center;
           }
-
+        
           .hero-section h1 {
             font-size: 3rem;
             text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.75);
           }
-
+        
           .hero-section p {
             font-size: 1.5rem;
             text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.75);
           }
-
+        
           .social-icons i {
             font-size: 2rem;
           }
-
+        
           @media (min-width: 992px) {
             .col-lg-7 {
               text-align: right; /* Align text to the right on larger screens */
             }
-
+        
             .col-lg-5 {
               text-align: left; /* Align image to the left on larger screens */
             }
@@ -170,218 +187,377 @@
               padding: 20px; /* Adds space around the content */
               height: 100%; /* Make sure the container has a defined height */
           }
-
+        
           .col-lg-5.d-none.d-lg-block .img-fluid.custom-rounded {
               max-height: 90%; /* Slightly less than 100% to ensure it doesn't touch the edges */
               max-width: 81%; /* Maintains the aspect ratio while ensuring it doesn't touch the edges */
               border-radius: 10px; /* Maintains the rounded corners */
           }
+        
+          /* Media query for devices with max-width up to 991px */
+          @media (max-width: 991px) {
+            .hero-section {
+              padding-top: 50px; /* Reduced padding for smaller screens */
+              height: auto; /* Makes hero section not strictly full screen height */
+              padding-bottom: 50px; /* Adds padding to bottom for better spacing */
+            }
+        
+            .hero-section h1 {
+              font-size: 2rem; /* Smaller font size for smaller screens */
+            }
+        
+            .hero-section p {
+              font-size: 1.2rem; /* Smaller font size for paragraph */
+            }
+        
+            .social-icons i {
+              font-size: 1.5rem; /* Smaller icon size for social media links */
+            }
+        
+            .col-lg-5.d-none.d-lg-block {
+              display: block; /* Makes the image block to fit mobile layout */
+              padding: 10px; /* Less padding */
+            }
+        
+            .col-lg-5.d-none.d-lg-block .img-fluid.custom-rounded {
+              max-height: 50%; /* Less height to fit smaller screens */
+            }
+          }
         </style>
         
         <style>
           .project-section {
-              margin-bottom: 2rem; /* Adds more space below each section */
-              border-bottom: 2px solid #ccc; /* Adds a subtle white line for separation */
-              padding-bottom: 20px; /* Adds padding below each project for better spacing */
+            margin-bottom: 2rem; /* Adds more space below each section */
+            border-bottom: 2px solid #ccc; /* Adds a subtle white line for separation */
+            padding-bottom: 20px; /* Adds padding below each project for better spacing */
           }
           .project-section:last-child {
-              border-bottom: none; /* Removes the border from the last project section */
+            border-bottom: none; /* Removes the border from the last project section */
           }
-      
+        
           .fs-8 { 
-              font-size: 1rem; 
-              margin-bottom: 0; /* Removes bottom margin */
-              margin-top: 0.5rem; /* Reduces space above the date */
+            font-size: 1rem; 
+            margin-bottom: 0; /* Removes bottom margin */
+            margin-top: 0.5rem; /* Reduces space above the date */
           }
           .fs-4, .fs-lg-5 { 
-              font-size: 1.25rem; 
-              margin-bottom: 0.5rem; /* Reduced space below the project title */
+            font-size: 1.25rem; 
+            margin-bottom: 0.5rem; /* Reduced space below the project title */
           }
           .fw-bold { 
-              font-weight: bold; 
+            font-weight: bold; 
           }
           .lh-lg { 
-              line-height: 1.5; 
+            line-height: 1.5; 
           }
           .mb-4, .mb-8 { 
-              margin-bottom: 1.5rem; /* mb-8 for larger bottom margin where necessary */
+            margin-bottom: 1.5rem; /* mb-8 for larger bottom margin where necessary */
           }
-      
+        
           .btn-custom {
-              background-color: #161c2d; /* Blue color */
-              color: #acb0b2;
-              border-radius: 20px; /* Rounded corners */
-              padding: 0.5rem 1rem; /* Adjust padding to control space around text */
-              font-size: 1.25rem; /* Larger text */
-              border: none;
-              transition: all 0.3s; /* Smooth transition for hover effects */
-              font-weight: 400;
-              margin-top: 0.5rem; /* Reduces space above the button */
+            background-color: #161c2d; /* Blue color */
+            color: #acb0b2;
+            border-radius: 20px; /* Rounded corners */
+            padding: 0.5rem 1rem; /* Adjust padding to control space around text */
+            font-size: 1.25rem; /* Larger text */
+            border: none;
+            transition: all 0.3s; /* Smooth transition for hover effects */
+            font-weight: 400;
+            margin-top: 0.5rem; /* Reduces space above the button */
           }
-      
+        
           .btn-custom:hover, .btn-custom:focus {
-              background-color: #447bb6; /* Darker shade of blue on hover */
-              box-shadow: 0 0 15px rgba(246, 251, 255, 0.889); /* Glowing effect */
-              color: white;
-              text-decoration: none;
+            background-color: #447bb6; /* Darker shade of blue on hover */
+            box-shadow: 0 0 15px rgba(246, 251, 255, 0.889); /* Glowing effect */
+            color: white;
+            text-decoration: none;
           }
-      
+        
           /* Ensures text alignment and spacing are uniformly applied */
           .project-section .col-md-6 {
-              display: flex;
-              flex-direction: column;
-              justify-content: center; /* Centers content vertically */
-              align-items: center; /* Centers content horizontally */
-              text-align: center; /* Aligns text centrally */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Centers content vertically */
+            align-items: center; /* Centers content horizontally */
+            text-align: center; /* Aligns text centrally */
           }
-      
+        
           .project-section .col-md-6 img {
-              width: 100%; /* Ensures images scale correctly within the column */
-              max-width: 100%; /* Prevents images from stretching beyond their maximum width */
-              height: auto; /* Keeps image aspect ratio */
-              margin-bottom: 0.5rem; /* Reduces space below images */
+            width: 100%; /* Ensures images scale correctly within the column */
+            max-width: 100%; /* Prevents images from stretching beyond their maximum width */
+            height: auto; /* Keeps image aspect ratio */
+            margin-bottom: 0.5rem; /* Reduces space below images */
           }
-      
+        
           .project-section .col-md-6 p {
-              margin-top: 0.5rem; /* Adjusts top margin for the paragraphs to be closer to the date */
-              margin-bottom: 0.5rem; /* Standardizes bottom margin for consistency */
+            margin-top: 0.5rem; /* Adjusts top margin for the paragraphs to be closer to the date */
+            margin-bottom: 0.5rem; /* Standardizes bottom margin for consistency */
           }
-
+        
           #projects-timeline{
             margin-bottom: 10px;
           }
-      </style>
+        
+          /* Media Query for devices with max-width up to 767px */
+          @media (max-width: 767px) {
+            .fs-8, .fs-4, .fs-lg-5, .btn-custom {
+              font-size: 0.875rem; /* Adjusting font size for smaller devices */
+            }
+        
+            .project-section {
+              padding-bottom: 10px; /* Reduced padding for better space usage on smaller screens */
+              margin-bottom: 1rem; /* Less vertical space between sections */
+            }
+        
+            .project-section .col-md-6 img {
+              margin-bottom: 0.25rem; /* Less space below images to fit more content on the screen */
+            }
+        
+            .btn-custom {
+              padding: 0.375rem 0.75rem; /* Smaller padding for the button */
+              font-size: 0.875rem; /* Smaller font size for buttons on mobile devices */
+            }
+          }
+        </style>
+        
 
-      <style>
-        .section-container {
-            background-color: whitesmoke; /* White background */
-            border: 1px solid #ccc; /* Light gray border */
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* Subtle shadow */
-            border-radius: 0.5rem; /* Rounded corners */
-            padding: 1.5rem; /* Padding inside the container */
-            margin-bottom: 10px; /* Space below each section */
-            margin-top: 10px;
-            width: 100%; /* Full width of the parent container */
-        }
+        <style>
+          .section-container {
+              background-color: whitesmoke; /* White background */
+              border: 1px solid #ccc; /* Light gray border */
+              box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* Subtle shadow */
+              border-radius: 0.5rem; /* Rounded corners */
+              padding: 1.5rem; /* Padding inside the container */
+              margin-bottom: 10px; /* Space below each section */
+              margin-top: 10px;
+              width: 100%; /* Full width of the parent container */
+          }
+      
+          /* Media Query for devices with max-width up to 767px */
+          @media (max-width: 767px) {
+              .section-container {
+                  padding: 1rem; /* Slightly less padding for smaller screens to maximize space */
+                  margin-bottom: 5px; /* Less vertical space between sections to make it more compact */
+                  margin-top: 5px;
+              }
+          }
+      
+          /* Optional: Media Query for very small devices */
+          @media (max-width: 480px) {
+              .section-container {
+                  padding: 0.75rem; /* Even smaller padding for very small screens */
+                  border-radius: 0.25rem; /* Smaller border-radius for a sharper look on small devices */
+              }
+          }
       </style>
+      
          
       
       
 
-        <style>
-          .timeline {
+      <style>
+        .timeline {
             display: flex;
             flex-direction: column;
             align-items: center;
             padding: 0;
             width: 100%;
-          }
-
-          .timeline > div {
+        }
+    
+        .timeline > div {
             border-bottom: 2px solid #ccc; /* Light white line for separation */
             margin-bottom: 20px;
             padding-bottom: 20px;
             width: 100%;
-          }
-
-          .timeline-image {
+        }
+    
+        .timeline-image {
             width: 100px; /* Adjusted size for better visibility */
             height: auto; /* Auto height for proper aspect ratio */
             margin-right: 20px; /* Space between image and text */
             align-self: flex-start; /* Align image to the top of the flex container */
-          }
-
-          .timeline-info {
+        }
+    
+        .timeline-info {
             display: flex;
             flex-direction: column;
             align-items: start; /* Aligns text to the start */
             text-align: left; /* Aligns text to the left */
-          }
-
-          .timeline-info > div {
+        }
+    
+        .timeline-info > div {
             display: flex;
             flex-direction: column;
-          }
-
-          .timeline-content {
+        }
+    
+        .timeline-content {
             padding: 0 10px; /* Padding around text */
-          }
-
-          .timeline-content h6 {
+        }
+    
+        .timeline-content h6 {
             font-size: 1rem;
             margin-bottom: 5px; /* Space between heading and date */
             color: #123456 ;
-          }
-
-          .timeline-content p {
+        }
+    
+        .timeline-content p {
             font-size: 0.875rem;
-          }
-
-          .timeline > div:last-child {
+        }
+    
+        .timeline > div:last-child {
             border-bottom: none; /* Removes the border from the last timeline entry */
-          }
-
-          #experience {
+        }
+    
+        #experience {
             margin-bottom: 10px;
-          }
-
-        </style>
-
-          <style>
-            
-
-              #skills .fw-light {
-                  font-weight: 300; /* Lighter font weight for sub-text */
-                  font-size: 1.25rem; /* Sub-heading size */
-                  color: #333; /* Dark grey color for visibility */
-              }
-
-              #skills .rounded-2 {
-                  border-radius: 0.5rem; /* Rounded corners */
-              }
-
-              #skills .shadow-sm {
-                  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-              }
-
-              #skills img {
-                  flex: 0 0 18%; /* Ensures 5 logos per row */
-                  max-width: 18%; /* Adjusts max width to ensure even distribution */
-                  height: auto; /* Maintain aspect ratio */
-                  margin-bottom: 10px; /* Space between rows */
-              }
-
-              #skills .d-flex {
-                  flex-wrap: wrap; /* Allows logos to wrap to next line */
-                  justify-content: center; /* Center align logos */
-                  gap: 10px; /* Space between logos */
-              }
-
-              #skills {
-              margin-bottom: 10px;
+        }
+    
+        /* Media Query for devices with max-width up to 767px */
+        @media (max-width: 767px) {
+            .timeline-image {
+                width: 80px; /* Smaller size for smaller screens */
+                margin-right: 15px; /* Reduced space between image and text */
             }
-          </style>
+    
+            .timeline-content h6, .timeline-content p {
+                font-size: 0.875rem; /* Smaller font size for content */
+            }
+    
+            .timeline > div {
+                padding-bottom: 15px; /* Reduced padding for compact layout */
+            }
+        }
+    
+        /* Optional: Media Query for very small devices */
+        @media (max-width: 480px) {
+            .timeline-image {
+                width: 60px; /* Even smaller size for very small devices */
+                margin-right: 10px; /* Further reduced space */
+            }
+    
+            .timeline-content {
+                padding: 0 5px; /* Smaller padding around text */
+            }
+    
+            .timeline-info {
+                align-items: center; /* Center-aligns text to handle smaller widths better */
+            }
+        }
+    </style>
+    
 
-          <style>
-            h3 {
-              font-size: 3rem; /* Sets a uniform font size */
-              font-weight: bold; /* Makes the header text bold */
-              text-align: center; /* Centers the text */
-              color: #123456; /* Specify the text color you want */
-              margin-top: 30px; /* Adds space above the header */
-              margin-bottom: 30px; /* Adds space below the header */
+    <style>
+      #skills .fw-light {
+          font-weight: 300; /* Lighter font weight for sub-text */
+          font-size: 1.25rem; /* Sub-heading size */
+          color: #333; /* Dark grey color for visibility */
+      }
+  
+      #skills .rounded-2 {
+          border-radius: 0.5rem; /* Rounded corners */
+      }
+  
+      #skills .shadow-sm {
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+      }
+  
+      #skills img {
+          flex: 0 0 18%; /* Ensures 5 logos per row */
+          max-width: 18%; /* Adjusts max width to ensure even distribution */
+          height: auto; /* Maintain aspect ratio */
+          margin-bottom: 10px; /* Space between rows */
+      }
+  
+      #skills .d-flex {
+          flex-wrap: wrap; /* Allows logos to wrap to next line */
+          justify-content: center; /* Center align logos */
+          gap: 10px; /* Space between logos */
+      }
+  
+      #skills {
+          margin-bottom: 10px;
+      }
+  
+      /* Media Query for devices with max-width up to 767px */
+      @media (max-width: 767px) {
+          #skills .fw-light {
+              font-size: 1rem; /* Smaller font size for smaller screens */
           }
-
-          h4 {
-              font-size: 2rem; /* Sets a uniform font size */
-              font-weight: bold; /* Makes the header text bold */
-              text-align: center; /* Centers the text */
-              color: #123456; /* Specify the text color you want */
-              margin-top: 20px; /* Adds space above the header */
-              margin-bottom: 10px; /* Adds space below the header */
+  
+          #skills img {
+              flex: 0 0 24%; /* Adjusts to 4 logos per row on smaller screens */
+              max-width: 24%; /* Adjusts max width to ensure even distribution */
           }
+  
+          #skills .d-flex {
+              gap: 5px; /* Smaller gap between logos for compact layout */
+          }
+      }
+  
+      /* Optional: Media Query for very small devices */
+      @media (max-width: 480px) {
+          #skills img {
+              flex: 0 0 48%; /* Adjusts to 2 logos per row on very small screens */
+              max-width: 48%; /* Adjusts max width to ensure even distribution */
+          }
+  
+          #skills .d-flex {
+              justify-content: space-around; /* Helps maintain even distribution when fewer items per row */
+          }
+      }
+  </style>
+  
 
-          </style>
+  <style>
+    h3 {
+        font-size: 3rem; /* Sets a uniform font size */
+        font-weight: bold; /* Makes the header text bold */
+        text-align: center; /* Centers the text */
+        color: #123456; /* Specify the text color you want */
+        margin-top: 30px; /* Adds space above the header */
+        margin-bottom: 30px; /* Adds space below the header */
+    }
+
+    h4 {
+        font-size: 2rem; /* Sets a uniform font size */
+        font-weight: bold; /* Makes the header text bold */
+        text-align: center; /* Centers the text */
+        color: #123456; /* Specify the text color you want */
+        margin-top: 20px; /* Adds space above the header */
+        margin-bottom: 10px; /* Adds space below the header */
+    }
+
+    /* Media Query for devices with max-width up to 768px */
+    @media (max-width: 768px) {
+        h3 {
+            font-size: 2.25rem; /* Slightly smaller font size for medium screens */
+            margin-top: 20px; /* Reduced space above the header */
+            margin-bottom: 20px; /* Reduced space below the header */
+        }
+
+        h4 {
+            font-size: 1.5rem; /* Reduced font size for medium screens */
+            margin-top: 15px; /* Reduced space above the header */
+            margin-bottom: 8px; /* Reduced space below the header */
+        }
+    }
+
+    /* Optional: Media Query for very small devices */
+    @media (max-width: 480px) {
+        h3 {
+            font-size: 1.75rem; /* Further reduced font size for small screens */
+            margin-top: 15px; /* Further reduced space above the header */
+            margin-bottom: 15px; /* Further reduced space below the header */
+        }
+
+        h4 {
+            font-size: 1.25rem; /* Further reduced font size for small screens */
+            margin-top: 10px; /* Further reduced space above the header */
+            margin-bottom: 5px; /* Further reduced space below the header */
+        }
+    }
+</style>
+
 
 
 
@@ -620,7 +796,38 @@
           .icons span { /* Specific styles for icons using the 'span' inside 'a.icons' */
               color: inherit; /* Inherits color from parent which is white set above */
           }
+      
+          /* Media Query for devices with max-width up to 767px */
+          @media (max-width: 767px) {
+              #footer {
+                  padding: 20px 10px; /* Adjust padding for smaller screens */
+              }
+      
+              #footer a, #footer a.icons {
+                  font-size: 0.875rem; /* Smaller font size for links and icons on smaller screens */
+              }
+      
+              #footer .icons span {
+                  font-size: 1.5rem; /* Adjusts icon size to be slightly larger for better touch targets */
+              }
+          }
+      
+          /* Optional: Media Query for very small devices */
+          @media (max-width: 480px) {
+              #footer {
+                  padding: 15px 5px; /* Reduced padding for very small screens */
+              }
+      
+              #footer a, #footer a.icons {
+                  font-size: 0.75rem; /* Further reduced font size for very small screens */
+              }
+      
+              #footer .icons span {
+                  font-size: 1.25rem; /* Smaller icons for very compact layouts */
+              }
+          }
       </style>
+      
 
      
       
