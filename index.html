@@ -139,91 +139,101 @@
         </section>        
         <style>
           .hero-section {
-            position: relative;
-            z-index: 1;
-            height: 100vh;
-            color: white;
-            padding-top: 100px;
-            background: url('assets/img/Hero/Portfolio Background.jpg') no-repeat center center;
-            background-size: cover;
+              position: relative;
+              z-index: 1;
+              height: 100vh;
+              color: white;
+              padding-top: 100px; /* Adjusted for navbar overlap */
+              background: url('assets/img/Hero/Portfolio Background.jpg') no-repeat center center;
+              background-size: cover;
           }
-        
+      
           .container.h-100 {
-            height: 100%;
+              height: 100%;
           }
-        
+      
           .row.h-100 {
-            height: 100%;
-            align-items: center;
+              height: 100%;
+              align-items: center;
           }
-        
+      
           .hero-section h1 {
-            font-size: 3rem;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.75);
+              font-size: 3rem; /* Large text for the main title */
+              text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.75);
           }
-        
+      
           .hero-section p {
-            font-size: 1.5rem;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.75);
+              font-size: 1.5rem; /* Sizable text for readable content */
+              text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.75);
           }
-        
+      
+          .social-icons {
+              display: flex;
+              justify-content: center; /* Center social icons below the text */
+              margin-top: 20px; /* Space above social icons */
+          }
+      
           .social-icons i {
-            font-size: 2rem;
+              font-size: 2rem; /* Icon size for visibility */
+              color: white; /* Match text color */
+              margin-right: 15px; /* Space between icons */
           }
-        
+      
+          /* Specific alignments for larger screens */
           @media (min-width: 992px) {
-            .col-lg-7 {
-              text-align: right; /* Align text to the right on larger screens */
-            }
-        
-            .col-lg-5 {
-              text-align: left; /* Align image to the left on larger screens */
-            }
+              .col-lg-7 {
+                  text-align: right;
+              }
+      
+              .col-lg-5 {
+                  text-align: left;
+              }
           }
+      
+          /* Adjustments for mobile and smaller devices */
           .col-lg-5.d-none.d-lg-block {
               display: flex;
-              align-items: center; /* Vertically centers the content within the container */
-              justify-content: center; /* Horizontally centers the content within the container */
-              padding: 20px; /* Adds space around the content */
-              height: 100%; /* Make sure the container has a defined height */
+              align-items: center;
+              justify-content: center;
+              padding: 20px;
+              height: 100%;
           }
-        
+      
           .col-lg-5.d-none.d-lg-block .img-fluid.custom-rounded {
-              max-height: 90%; /* Slightly less than 100% to ensure it doesn't touch the edges */
-              max-width: 81%; /* Maintains the aspect ratio while ensuring it doesn't touch the edges */
-              border-radius: 10px; /* Maintains the rounded corners */
+              max-height: 90%;
+              max-width: 81%;
+              border-radius: 10px;
           }
-        
-          /* Media query for devices with max-width up to 991px */
+      
+          /* Responsive adjustments for devices up to 991px */
           @media (max-width: 991px) {
-            .hero-section {
-              padding-top: 50px; /* Reduced padding for smaller screens */
-              height: auto; /* Makes hero section not strictly full screen height */
-              padding-bottom: 50px; /* Adds padding to bottom for better spacing */
-            }
-        
-            .hero-section h1 {
-              font-size: 2rem; /* Smaller font size for smaller screens */
-            }
-        
-            .hero-section p {
-              font-size: 1.2rem; /* Smaller font size for paragraph */
-            }
-        
-            .social-icons i {
-              font-size: 1.5rem; /* Smaller icon size for social media links */
-            }
-        
-            .col-lg-5.d-none.d-lg-block {
-              display: block; /* Makes the image block to fit mobile layout */
-              padding: 10px; /* Less padding */
-            }
-        
-            .col-lg-5.d-none.d-lg-block .img-fluid.custom-rounded {
-              max-height: 50%; /* Less height to fit smaller screens */
-            }
+              .hero-section {
+                  padding-top: 60px; /* Increased padding to avoid navbar overlap */
+                  padding-bottom: 20px; /* Space below the section */
+                  height: auto; /* Flexible height to accommodate content */
+              }
+      
+              .hero-section h1 {
+                  font-size: 2.5rem; /* Smaller font size for mobile */
+              }
+      
+              .hero-section p {
+                  font-size: 1.2rem; /* Smaller font size for paragraph text */
+              }
+      
+              .social-icons i {
+                  font-size: 1.75rem; /* Slightly smaller icons for compact design */
+              }
+      
+              .col-lg-5.d-none.d-lg-block {
+                  display: block; /* Ensure image is displayed on mobile */
+                  max-height: 50%; /* Adjust image size for mobile view */
+                  max-width: 100%; /* Full width within its container */
+                  margin: auto; /* Center the image horizontally */
+              }
           }
-        </style>
+      </style>
+      
         
         <style>
           .project-section {
