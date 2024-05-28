@@ -141,98 +141,64 @@
           .hero-section {
               position: relative;
               z-index: 1;
-              height: 100vh;
+              height: auto; /* Adjusted to 'auto' for dynamic content sizing */
               color: white;
-              padding-top: 100px; /* Adjusted for navbar overlap */
+              padding-top: 150px; /* Increased top padding to push content down below the navbar */
+              padding-bottom: 50px; /* Added bottom padding for better spacing */
               background: url('assets/img/Hero/Portfolio Background.jpg') no-repeat center center;
               background-size: cover;
           }
       
           .container.h-100 {
-              height: 100%;
+              min-height: 100vh; /* Ensures container is at least the height of the viewport */
           }
       
           .row.h-100 {
-              height: 100%;
-              align-items: center;
+              min-height: 100vh; /* Adjusts row height to ensure it covers full viewport height on mobile */
           }
       
           .hero-section h1 {
-              font-size: 3rem; /* Large text for the main title */
+              font-size: 3rem; /* Adjust font sizes if necessary */
               text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.75);
           }
       
           .hero-section p {
-              font-size: 1.5rem; /* Sizable text for readable content */
+              font-size: 1.5rem;
               text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.75);
           }
       
-          .social-icons {
-              display: flex;
-              justify-content: center; /* Center social icons below the text */
-              margin-top: 20px; /* Space above social icons */
-          }
-      
           .social-icons i {
-              font-size: 2rem; /* Icon size for visibility */
-              color: white; /* Match text color */
-              margin-right: 15px; /* Space between icons */
+              font-size: 2rem;
           }
       
-          /* Specific alignments for larger screens */
-          @media (min-width: 992px) {
-              .col-lg-7 {
-                  text-align: right;
-              }
-      
-              .col-lg-5 {
-                  text-align: left;
-              }
-          }
-      
-          /* Adjustments for mobile and smaller devices */
-          .col-lg-5.d-none.d-lg-block {
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              padding: 20px;
-              height: 100%;
-          }
-      
-          .col-lg-5.d-none.d-lg-block .img-fluid.custom-rounded {
-              max-height: 90%;
-              max-width: 81%;
-              border-radius: 10px;
-          }
-      
-          /* Responsive adjustments for devices up to 991px */
-          @media (max-width: 991px) {
+          /* Media Query for small devices */
+          @media (max-width: 767px) {
               .hero-section {
-                  padding-top: 60px; /* Increased padding to avoid navbar overlap */
-                  padding-bottom: 20px; /* Space below the section */
-                  height: auto; /* Flexible height to accommodate content */
+                  padding-top: 120px; /* Further adjust padding to ensure text is visible */
+                  height: auto; /* Adjust height dynamically to content */
               }
       
               .hero-section h1 {
-                  font-size: 2.5rem; /* Smaller font size for mobile */
+                  font-size: 2.5rem; /* Smaller font for mobile */
               }
       
               .hero-section p {
-                  font-size: 1.2rem; /* Smaller font size for paragraph text */
-              }
-      
-              .social-icons i {
-                  font-size: 1.75rem; /* Slightly smaller icons for compact design */
+                  font-size: 1.2rem; /* Smaller paragraph font size for mobile */
               }
       
               .col-lg-5.d-none.d-lg-block {
-                  display: block; /* Ensure image is displayed on mobile */
-                  max-height: 50%; /* Adjust image size for mobile view */
-                  max-width: 100%; /* Full width within its container */
-                  margin: auto; /* Center the image horizontally */
+                  display: block; /* Show image block on mobile */
+                  max-width: 80%; /* Adjust width for mobile */
+                  margin: 20px auto; /* Center it horizontally with margin */
+              }
+      
+              .col-lg-5.d-none.d-lg-block .img-fluid.custom-rounded {
+                  max-width: 100%; /* Full width of its container */
+                  border-radius: 10px; /* Maintaining border radius */
               }
           }
       </style>
+      
       
         
         <style>
